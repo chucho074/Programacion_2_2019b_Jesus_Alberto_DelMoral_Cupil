@@ -1,0 +1,56 @@
+Preprocesador
+
+El preprocesador analiza el fichero fuente antes de la fase de compilación real, y realiza las sustituciones de macros y procesa las directivas del preprocesador. El preprocesador también elimina los comentarios.
+
+Una directiva de preprocesador es una línea cuyo primer carácter es un #.
+
+_________________________________________________________________
+
+
+#define
+
+La directiva #define, sirve para definir macros. Las macros suministran un sistema para la sustitución de palabras, con y sin parámetros.
+
+
+EJEMPLO DE SINTAXIS:
+#define identificador_de_macro <secuencia>
+
+______________________________________________________________
+
+#undef
+
+Sirve para eliminar definiciones de macros previamente definidas. La definición de la macro se olvida y el identificador queda indefinido.
+
+EJEMPLO DE SINTAXIS:
+#undef identificador_de_macro
+
+
+Las directivas condicionales #ifdef e #ifndef se basan precisamente en esta propiedad de los identificadores.
+
+Después de que una macro quede indefinida puede ser definida de nuevo con #define, usando la misma u otra definición.
+
+Es preferible usar un mecanismo como este para detectar macros existentes:
+
+#ifndef NULL 
+  #define NULL 0L 
+#endif
+
+__________________________________________________________
+#if, #elif, #else y #endif
+
+Permiten hacer una compilación condicional de un conjunto de líneas de código.
+
+EJEMPLO DE SINTAXIS:
+
+#if expresión-constante-1 
+<sección-1> 
+#elif <expresión-constante-2> 
+<sección-2> 
+.
+.
+.
+#elif <expresión-constante-n> 
+<sección-n> 
+<#else> 
+<sección-final> 
+#endif
