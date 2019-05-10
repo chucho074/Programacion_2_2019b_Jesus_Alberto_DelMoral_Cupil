@@ -1,0 +1,4 @@
+﻿  Source.cpp
+c:\users\jacup\source\repos\quicksort\quicksort\source.cpp(22): warning C4267: 'inicializando': conversión de 'size_t' a 'short'; posible pérdida de datos
+c:\users\jacup\source\repos\quicksort\quicksort\source.cpp(43): warning C4267: 'inicializando': conversión de 'size_t' a 'short'; posible pérdida de datos
+  QuickSort.vcxproj -> C:\Users\jacup\source\repos\QuickSort\Debug\QuickSort.exe
