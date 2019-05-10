@@ -5,7 +5,7 @@ using std::cout;
 using std::cin;
 using std::endl;
 
-int main() {
+/*int main() {
 	cout << "Set a number" << endl;
 	int num1;
 	cin >> num1;
@@ -22,4 +22,16 @@ int main() {
 	}
 	cin.get();
 	return 0;
+}*/
+
+int fact(int i) {
+	return i <= 1 ? 1 : i * fact(i - 1);
+}
+
+int main() {
+	
+	cout<<fact(5);
+	cin.get();
+	return 0;
+
 }
