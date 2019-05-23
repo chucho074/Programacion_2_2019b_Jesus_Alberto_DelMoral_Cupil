@@ -1,4 +1,5 @@
 ﻿  Source.cpp
-c:\users\jacup\source\repos\quicksort\quicksort\source.cpp(22): warning C4267: 'inicializando': conversión de 'size_t' a 'short'; posible pérdida de datos
-c:\users\jacup\source\repos\quicksort\quicksort\source.cpp(43): warning C4267: 'inicializando': conversión de 'size_t' a 'short'; posible pérdida de datos
-  QuickSort.vcxproj -> C:\Users\jacup\source\repos\QuickSort\Debug\QuickSort.exe
+c:\users\jacup\desktop\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 1\practicas\quick & bubble sort\quicksort\source.cpp(14): warning C4267: 'argumento': conversión de 'size_t' a 'short'; posible pérdida de datos
+c:\users\jacup\desktop\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 1\practicas\quick & bubble sort\quicksort\source.cpp(21): warning C4018: '<': no coinciden signed/unsigned
+c:\users\jacup\desktop\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 1\practicas\quick & bubble sort\quicksort\source.cpp(36): warning C4267: 'inicializando': conversión de 'size_t' a 'short'; posible pérdida de datos
+  QuickSort.vcxproj -> C:\Users\jacup\Desktop\Escuela\Segundo cuatri\Progra\REPO\Programacion_2_2019b_Jesus_Alberto_DelMoral_Cupil\Parcial 1\Practicas\Quick & Bubble Sort\Debug\QuickSort.exe
