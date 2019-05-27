@@ -1,43 +1,32 @@
 #include <iostream>
 #include <string>
-
-/*class mamiferos : public vertebrados {};
-class peces : public vertebrados {};
-class aves : public vertebrados {};
-class reptiles : public vertebrados {};
-class anfibios : public vertebrados{};
-
-class carnivoros {};
-class herbivoros {};
-class omnivoros {};
-
-class vertebrados : public ANIMALES{};
-class invertebrados : public ANIMALES{};*/
-
+#include <vector>
 
 class ANIMALES {
+protected:
+	std::string name;
 public:
 	enum sexo {
 		Macho,
 		Hembra,
 		asexual
 	};
-
 	bool pelaje;
 	virtual void move() = 0;
+	
 };
 
 class invertebrados : public ANIMALES {
 public:
-	virtual void move() = 0;
 	bool concha;
 	bool alas;
+	void move() {};
 };
 
 class vertebrados : public ANIMALES {
 public:
 	unsigned short bones;
-	virtual void move() = 0;
+	
 };
 
 class mamiferos : public vertebrados {
@@ -51,11 +40,13 @@ public:
 	virtual void move() = 0;
 };
 
-class pulpo : invertebrados {
+class pulpo : public invertebrados {
 public:
 	pulpo() {
+		name = "Pulpi";
 		concha = false;
 		alas = false;
+		pelaje = false;
 
 	}
 	void move(){ }
@@ -64,6 +55,7 @@ public:
 class lobo : public mamiferos {
 public:
 	lobo() {
+		name = "Wolfi";
 		pelaje = true;
 		bones = 320;
 	}
@@ -73,6 +65,7 @@ public:
 class leon : public mamiferos {
 public:
 	leon() {
+		name = "Leonidas";
 		pelaje = true;
 		bones = 525;
 	}
@@ -82,6 +75,7 @@ public:
 class tiburon : public peces {
 public:
 	tiburon() {
+		name = "Tiburoncin";
 		num_aletas = 6;
 	}
 	void move() { }
@@ -90,14 +84,16 @@ public:
 class medusa : public invertebrados {
 public:
 	medusa() {
+		name = "Meducin";
 		concha = false;
 	}
 	void move() { };
 };
 
-class babosa : invertebrados {
+class babosa : public invertebrados {
 public:
 	babosa() {
+		name = "Babocin";
 		concha = true;
 		alas = false;
 		}
@@ -116,6 +112,15 @@ int main() {
 	medusa Medusita;
 	babosa Babosita;
 
-		
+	std::vector<ANIMALES*> vec_anim;
+	vec_anim.push_back(&Lobito);
+	vec_anim.push_back(&Pulpito);
+	vec_anim.push_back(&Leoncito);
+	vec_anim.push_back(&Tiburoncin);
+	vec_anim.push_back(&Medusita);
+	vec_anim.push_back(&Babosita);
+
+
+
 	return 0;
 }
