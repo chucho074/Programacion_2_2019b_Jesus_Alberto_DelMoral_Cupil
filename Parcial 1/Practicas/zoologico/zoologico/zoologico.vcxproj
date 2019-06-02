@@ -115,10 +115,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Animales.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Utilerias.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Class.h" />
+    <ClInclude Include="Animales.h" />
+    <ClInclude Include="Librerias.h" />
+    <ClInclude Include="Utilerias.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

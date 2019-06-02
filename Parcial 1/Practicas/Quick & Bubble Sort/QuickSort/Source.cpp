@@ -25,13 +25,6 @@ void f_printvec(vector<short> vectorx) {
 
 
 void f_bubblesort(vector<short> & vectorx) {
-	/*
-	TODO:
-	Improve algorithm: 
-	it is always swapping variables
-	it is doing more iterations than needed
-	add flag to check if it's already sorted
-	*/
 	short int temp;
 	short int tama = vectorx.size();
 	bool flag;
@@ -64,10 +57,10 @@ void f_quicksort(short izq, vector<short> & vectorx, short der){
 	piv = vectorx[(izq + der) / 2];
 
 	do {
-		while ((piv>vectorx[i])/*&&(j<=der)*/) {
+		while ((piv>vectorx[i])&&(j<=der)) {
 			i++;
 		}
-		while ((piv<vectorx[j])/*&&(j>izq)*/) {
+		while ((piv<vectorx[j])&&(j>izq)) {
 			j--;
 		}
 		if (i <= j) {

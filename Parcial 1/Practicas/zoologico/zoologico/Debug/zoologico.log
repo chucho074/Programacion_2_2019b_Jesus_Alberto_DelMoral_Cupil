@@ -1,19 +1,2 @@
-﻿  Source.cpp
-c:\users\jacup\desktop\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 1\practicas\zoologico\zoologico\source.cpp(146): warning C4267: 'argumento': conversión de 'size_t' a 'unsigned short'; posible pérdida de datos
-c:\users\jacup\desktop\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 1\practicas\zoologico\zoologico\source.cpp(159): error C3867: 'ANIMALES::return_age': sintaxis no estándar; utilice '&' para crear un puntero al miembro
-c:\users\jacup\desktop\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 1\practicas\zoologico\zoologico\source.cpp(159): error C2446: >': no hay conversión de 'unsigned short (__thiscall ANIMALES::* )(void)' en 'int'
-  c:\users\jacup\desktop\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 1\practicas\zoologico\zoologico\source.cpp(159): note: No existe un contexto en el que sea posible realizar esta conversión
-c:\users\jacup\desktop\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 1\practicas\zoologico\zoologico\source.cpp(162): error C3867: 'ANIMALES::return_age': sintaxis no estándar; utilice '&' para crear un puntero al miembro
-c:\users\jacup\desktop\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 1\practicas\zoologico\zoologico\source.cpp(162): error C2446: <': no hay conversión de 'unsigned short (__thiscall ANIMALES::* )(void)' en 'int'
-  c:\users\jacup\desktop\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 1\practicas\zoologico\zoologico\source.cpp(162): note: No existe un contexto en el que sea posible realizar esta conversión
-c:\users\jacup\desktop\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 1\practicas\zoologico\zoologico\source.cpp(166): error C3867: 'ANIMALES::return_age': sintaxis no estándar; utilice '&' para crear un puntero al miembro
-c:\users\jacup\desktop\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 1\practicas\zoologico\zoologico\source.cpp(166): error C2440: '=': no se puede realizar la conversión de 'unsigned short (__thiscall ANIMALES::* )(void)' a 'unsigned short'
-  c:\users\jacup\desktop\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 1\practicas\zoologico\zoologico\source.cpp(166): note: No existe un contexto en el que sea posible realizar esta conversión
-c:\users\jacup\desktop\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 1\practicas\zoologico\zoologico\source.cpp(167): error C3867: 'ANIMALES::return_age': sintaxis no estándar; utilice '&' para crear un puntero al miembro
-c:\users\jacup\desktop\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 1\practicas\zoologico\zoologico\source.cpp(167): error C2440: '=': no se puede realizar la conversión de 'unsigned short (__thiscall ANIMALES::* )(void)' a '_Ty'
-          with
-          [
-              _Ty=ANIMALES *
-          ]
-  c:\users\jacup\desktop\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 1\practicas\zoologico\zoologico\source.cpp(167): note: No existe un contexto en el que sea posible realizar esta conversión
-c:\users\jacup\desktop\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 1\practicas\zoologico\zoologico\source.cpp(168): error C2659: '=': función como operando izquierdo
+﻿  Utilerias.cpp
+  zoologico.vcxproj -> C:\Users\jacup\Desktop\Escuela\Segundo cuatri\Progra\REPO\Programacion_2_2019b_Jesus_Alberto_DelMoral_Cupil\Parcial 1\Practicas\zoologico\Debug\zoologico.exe
