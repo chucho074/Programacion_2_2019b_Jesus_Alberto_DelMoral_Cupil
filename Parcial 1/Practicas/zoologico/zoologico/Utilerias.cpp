@@ -7,22 +7,36 @@ void f_quicksort(unsigned short izq, vector<ANIMALES*> & vectorx, unsigned short
 	ANIMALES * temp = nullptr;
 	i = izq;
 	j = der;
-	piv = vectorx[(izq + der) / 2] ->return_age();
+	unsigned short mid = (izq + der) / 2;
+	piv = vectorx[mid]->return_age();
 
 	do {
-		while ((piv > vectorx[i]->return_age()) && (j <= der) && i<der ) {
+		while ((piv > vectorx[i]->return_age()) && (j <= der) && i < der) {
 			i++;
 		}
-		while ((piv< vectorx[j]->return_age() && (j > izq))) {
+
+		while ((piv < vectorx[j]->return_age() && (j > izq))) {
 			j--;
 		}
+
+		//Actualizacion del quicksort
+		if (piv == vectorx[i]->return_age()) {
+			if (vectorx[mid]->return_name() != vectorx[i]->return_name()){
+				
+			} 
+			/*else if(vectorx[mid]) {
+
+			}*/
+		}
+
 		if (i <= j) {
 			temp = vectorx[i];
-			*vectorx[i] = *vectorx[j];
-			*vectorx[j] = *temp;
+			vectorx[i] = vectorx[j];
+			vectorx[j] = temp;
 			i++;
 			j--;
 		}
+
 	} while (i <= j);
 
 	if (izq < j) {

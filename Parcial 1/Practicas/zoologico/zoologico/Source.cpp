@@ -113,6 +113,8 @@ int main() {
 
 	f_quicksort(0, vec_anim, vec_anim.size() - 1);
 
+
+	std::cout << " Hey men, si ves esto, no hay errores. \n Ve a descansar, lo mereces, wapo :D\n\nreturn 0;" << std::endl;
 	return 0;
 }
 

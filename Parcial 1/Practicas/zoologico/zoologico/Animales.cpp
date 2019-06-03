@@ -1,4 +1,6 @@
 #include "Animales.h"
+		
+			//Setters
 
 //Setter name
 void ANIMALES::set_name(string name_in) {
@@ -10,6 +12,13 @@ void ANIMALES::set_age(unsigned short age_in) {
 	age = age_in;
 }
 
+//Setter healt
+void ANIMALES::set_healt(HEALT healt_in) {
+	healt = healt_in;
+}
+
+			//Getters
+
 //Getter age
 unsigned short ANIMALES::return_age() {
 	return age;
@@ -20,9 +29,8 @@ string ANIMALES::return_name() {
 	return name;
 }
 
-//Enum de vida
-enum HEALT {
-	good,
-	bad,
-	critical
-};
+//Getter healt
+HEALT ANIMALES::return_healt() {
+	return healt;
+}
+

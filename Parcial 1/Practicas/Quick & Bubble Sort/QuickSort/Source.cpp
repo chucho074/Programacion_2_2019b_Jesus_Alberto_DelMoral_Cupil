@@ -57,10 +57,10 @@ void f_quicksort(short izq, vector<short> & vectorx, short der){
 	piv = vectorx[(izq + der) / 2];
 
 	do {
-		while ((piv>vectorx[i])&&(j<=der)) {
+		while ((piv>vectorx[i]) && (j<=der)) {
 			i++;
 		}
-		while ((piv<vectorx[j])&&(j>izq)) {
+		while ((piv<vectorx[j]) && (j>izq)) {
 			j--;
 		}
 		if (i <= j) {
@@ -73,7 +73,7 @@ void f_quicksort(short izq, vector<short> & vectorx, short der){
 	} while (i <= j);
 
 	if (izq < j) {
-		f_quicksort(izq, vectorx,j);
+		f_quicksort(izq, vectorx, j);
 	}
 	if (der>i) {
 		f_quicksort(i, vectorx, der);
