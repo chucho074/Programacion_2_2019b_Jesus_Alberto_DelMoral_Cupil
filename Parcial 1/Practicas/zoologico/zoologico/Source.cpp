@@ -111,7 +111,7 @@ int main() {
 	vec_anim.push_back(&Babosita);
 	vec_anim[0]->return_age();
 
-	f_quicksort(0, vec_anim, vec_anim.size() - 1);
+	f_quicksort(0, vec_anim, vec_anim.size() - 1, EDAD);
 
 
 	std::cout << " Hey men, si ves esto, no hay errores. \n Ve a descansar, lo mereces, wapo :D\n\nreturn 0;" << std::endl;
