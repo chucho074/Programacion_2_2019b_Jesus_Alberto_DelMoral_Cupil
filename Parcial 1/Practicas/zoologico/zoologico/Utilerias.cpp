@@ -1,7 +1,7 @@
 #include "Utilerias.h"
 
 //Funcion Quicksort implementada a vector de animales
-void f_quicksort(unsigned short izq, vector<ANIMALES*> & vectorx, unsigned short der, OPCIONES O) {
+void f_quicksort(unsigned short izq, vector<ANIMALES*> & vectorx, unsigned short der, OPCIONES o, vector<char> opciones) {
 	unsigned short i, j, piv;
 	ANIMALES * temp = nullptr;
 	i = izq;
@@ -9,13 +9,18 @@ void f_quicksort(unsigned short izq, vector<ANIMALES*> & vectorx, unsigned short
 	unsigned short mid = (izq + der) / 2;
 	piv = vectorx[mid]->return_age();
 
+
 	do {
-		if (O == NOMBRE)
-		{
+						//Nombre
+		if (o == NOMBRE){
 			while ((vectorx[mid]->return_name() >= vectorx[i]->return_name()) && (j <= der) && i < der) {
 				if (vectorx[mid] ->return_name() == vectorx[i]->return_name()) {
-					//Nombre
-					f_quicksort(i, vectorx, j, SALUD);
+					if (opciones[0]=='N') {
+						f_quicksort(i, vectorx, j, EDAD, opciones);
+					} 
+					else if (opciones[1]== 'N') {
+						f_quicksort(i, vectorx, j, SALUD, opciones);
+					}
 				}
 				else if (vectorx[mid] -> return_name() > vectorx[i]->return_name()) {
 					i++;
@@ -35,13 +40,17 @@ void f_quicksort(unsigned short izq, vector<ANIMALES*> & vectorx, unsigned short
 			}
 		}
 	
-
-		else if (O == EDAD)
+						//Edades
+		else if (o== EDAD)
 		{
 			while ((piv >= vectorx[i]->return_age()) && (j <= der) && i < der) {
-				if (piv == vectorx[i] -> return_age() ) {
-					//Nombre
-					f_quicksort(i,vectorx,j,NOMBRE);
+				if (piv == vectorx[i]->return_age()){
+					if (opciones[0] == 'E') {
+						f_quicksort(i, vectorx, j, NOMBRE, opciones);
+					}
+					else if (opciones[1] == 'E') {
+						f_quicksort(i, vectorx, j, SALUD, opciones);
+					}
 				}
 				else if (piv > vectorx[i] ->return_age()) {
 					i++;
@@ -61,10 +70,16 @@ void f_quicksort(unsigned short izq, vector<ANIMALES*> & vectorx, unsigned short
 			}
 		}
 
-		else if (O == SALUD)
+				//Salud
+		else if (o== SALUD)
 		{
-			while ((piv >= vectorx[i]->return_age()) && (j <= der) && i < der) {
+			while ((piv >= vectorx[i]->return_healt()) && (j <= der) && i < der) {
+				if (piv == vectorx[i]->return_healt() && opciones[0]=='S') {
+					f_quicksort(i, vectorx, j, EDAD, opciones);
+				}
+				else if (piv > vectorx[i]->return_healt()) {
 					i++;
+				}
 			}
 
 			while ((piv < vectorx[j]->return_age() && (j > izq))) {
@@ -84,10 +99,10 @@ void f_quicksort(unsigned short izq, vector<ANIMALES*> & vectorx, unsigned short
 	} while (i <= j);
 
 	if (izq < j) {
-		f_quicksort(izq, vectorx, j, O);
+		f_quicksort(izq, vectorx, j, o, opciones);
 	}
 	if (der > i) {
-		f_quicksort(i, vectorx, der, O);
+		f_quicksort(i, vectorx, der, o, opciones);
 	}
 }
 

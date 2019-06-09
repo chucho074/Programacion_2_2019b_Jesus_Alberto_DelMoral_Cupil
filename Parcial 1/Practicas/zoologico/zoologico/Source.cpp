@@ -86,21 +86,27 @@ int main() {
 	lobo Lobito;
 	Lobito.set_name("Wolfi");
 	Lobito.set_age(25);
+	Lobito.set_healt(good);
 	pulpo Pulpito;
 	Pulpito.set_name("Pulpi");
 	Pulpito.set_age(5);
+	Pulpito.set_healt(bad);
 	leon Leoncito;
 	Leoncito.set_name("Leonidas");
 	Leoncito.set_age(30);
+	Leoncito.set_healt(critical);
 	tiburon Tiburoncin;
 	Tiburoncin.set_name("Tiburoncin");
 	Tiburoncin.set_age(15);
+	Tiburoncin.set_healt(good);
 	medusa Medusita;
 	Medusita.set_name("Meducin");
 	Medusita.set_age(3);
+	Medusita.set_healt(good);
 	babosa Babosita;
 	Babosita.set_name("Babocin");
-	Babosita.set_age(1);
+	Babosita.set_age(3);
+	Babosita.set_healt(critical);
 
 	vector<ANIMALES*> vec_anim;
 	vec_anim.push_back(&Lobito);
@@ -111,7 +117,31 @@ int main() {
 	vec_anim.push_back(&Babosita);
 	vec_anim[0]->return_age();
 
-	f_quicksort(0, vec_anim, vec_anim.size() - 1, EDAD);
+	
+
+	std::cout << "Elija la forma de ordenamiento deseada:\n";
+	std::cout << " 0 .- Nombre-Edad-Salud \n 1 .- Edad-Nombre-Salud \n 2 .- Salud-Edad-Nombre" << std::endl;
+	char f;
+	std::cin >> f;
+	vector<char> opciones;
+
+	switch (f) {
+	case '0': {
+		opciones = { 'N', 'E', 'S' };
+		f_quicksort(0, vec_anim, vec_anim.size() - 1, NOMBRE, opciones);
+	}
+	case '1': {
+		opciones = { 'E','N','S' };
+		f_quicksort(0, vec_anim, vec_anim.size() - 1, EDAD, opciones);
+	}
+	case '2': {
+		opciones = { 'S','E','N' };
+		f_quicksort(0, vec_anim, vec_anim.size() - 1, SALUD, opciones);
+	}
+	default:
+		break;
+	}
+	
 
 
 	std::cout << " Hey men, si ves esto, no hay errores. \n Ve a descansar, lo mereces, wapo :D\n\nreturn 0;" << std::endl;

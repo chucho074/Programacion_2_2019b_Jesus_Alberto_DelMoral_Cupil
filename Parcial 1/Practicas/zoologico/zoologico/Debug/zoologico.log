@@ -1,5 +1,5 @@
 ﻿  Source.cpp
-c:\users\jacup\desktop\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 1\practicas\zoologico\zoologico\source.cpp(114): warning C4267: 'argumento': conversión de 'size_t' a 'unsigned short'; posible pérdida de datos
-  Utilerias.cpp
-  Generando código...
+c:\users\jacup\desktop\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 1\practicas\zoologico\zoologico\source.cpp(131): warning C4267: 'argumento': conversión de 'size_t' a 'unsigned short'; posible pérdida de datos
+c:\users\jacup\desktop\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 1\practicas\zoologico\zoologico\source.cpp(135): warning C4267: 'argumento': conversión de 'size_t' a 'unsigned short'; posible pérdida de datos
+c:\users\jacup\desktop\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 1\practicas\zoologico\zoologico\source.cpp(139): warning C4267: 'argumento': conversión de 'size_t' a 'unsigned short'; posible pérdida de datos
   zoologico.vcxproj -> C:\Users\jacup\Desktop\Escuela\Segundo cuatri\Progra\REPO\Programacion_2_2019b_Jesus_Alberto_DelMoral_Cupil\Parcial 1\Practicas\zoologico\Debug\zoologico.exe

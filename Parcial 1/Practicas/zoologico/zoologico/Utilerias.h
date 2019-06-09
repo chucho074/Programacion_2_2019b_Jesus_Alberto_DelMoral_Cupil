@@ -9,5 +9,7 @@ enum OPCIONES
 	SALUD
 };
 
+
+
 //Funcion del quicksort
-void f_quicksort(unsigned short, vector<ANIMALES*> &, unsigned short, OPCIONES O);
+void f_quicksort(unsigned short izq, vector<ANIMALES*> & vectorx, unsigned short der, OPCIONES o, vector<char> opciones);
