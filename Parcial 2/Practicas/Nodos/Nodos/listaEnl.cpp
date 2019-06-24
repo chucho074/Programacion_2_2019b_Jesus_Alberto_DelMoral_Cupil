@@ -4,8 +4,9 @@
 
 */
 
-//Includes
+		//Includes
 #include "listaEnl.h"
+
 
 
 //Constructor
@@ -19,10 +20,10 @@ listaEnl::~listaEnl() {
 }
 
 
-	//Funciones principales
+		//Funciones principales
 
 //Añadir elemento a la ListaEnlazada
-void addElement(NodoDoble *&list, string name, int age) {
+void listaEnl::addElement(NodoDoble *&list, string name, int age) {
 	NodoDoble * NewNodo = new NodoDoble();	//Crear el espacio en memoria
 	NewNodo->name = name;	//Ingresar datos
 	NewNodo->age = age;	//Ingresar datos parte 2
@@ -46,6 +47,6 @@ void addElement(NodoDoble *&list, string name, int age) {
 }
 
 //Eliminar elemento de la ListaEnalzada
-void deletElement() {
+void listaEnl::deletElement(NodoDoble *&list, string name, int age) {
 	
 }

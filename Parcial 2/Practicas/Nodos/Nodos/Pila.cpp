@@ -1,7 +1,8 @@
+		//Includes
 #include "Pila.h"
 
 
-
+		//Funciones
 Pila::Pila() {
 
 }
@@ -10,6 +11,8 @@ Pila::Pila() {
 Pila::~Pila() {
 
 }
+
+		//Funciones principales
 
 //Añadir a la pila
 void Pila::addPila(Nodo *& pila, string name, int age){

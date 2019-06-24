@@ -1,5 +1,8 @@
+//Incluedes
 #pragma once
 #include "Lirberias.h"
+
+//Clase principal
 class Pila {
 public:
 	//Añadir a la pila
