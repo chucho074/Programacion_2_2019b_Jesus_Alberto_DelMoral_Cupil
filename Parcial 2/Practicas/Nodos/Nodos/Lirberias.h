@@ -32,7 +32,7 @@ struct Nodo {
 struct NodoDoble {
 	string name;
 	int age;
-	Nodo *next;
-	Nodo *before;
+	NodoDoble *next;
+	NodoDoble *before;
 };
 

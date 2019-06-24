@@ -22,12 +22,12 @@ listaEnl::~listaEnl() {
 	//Funciones principales
 
 //Añadir elemento a la ListaEnlazada
-void addElement(Nodo *&list, string name, int age) {
-	Nodo * NewNodo = new Nodo();	//Crear el espacio en memoria
+void addElement(NodoDoble *&list, string name, int age) {
+	NodoDoble * NewNodo = new NodoDoble();	//Crear el espacio en memoria
 	NewNodo->name = name;	//Ingresar datos
 	NewNodo->age = age;	//Ingresar datos parte 2
-	Nodo *aux1 = list;
-	Nodo *aux2;
+	NodoDoble *aux1 = list;
+	NodoDoble *aux2;
 
 	while((aux1 != NULL) && (aux1->age < age)) {
 		aux2 = aux1;
