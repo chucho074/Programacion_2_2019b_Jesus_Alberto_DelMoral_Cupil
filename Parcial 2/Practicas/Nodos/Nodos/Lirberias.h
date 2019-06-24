@@ -23,10 +23,15 @@ using std::endl;
 		//Structs
 
 //Nodo simple
-struct Nodo {
+class Nodo {
 	string name;
 	int age;
 	Nodo *next;
+
+	Nodo(string a_name, int a_age) {
+		name = a_name;
+		age = a_age;
+	}
 };
 
 //Nodo para lista doblemente enlazada

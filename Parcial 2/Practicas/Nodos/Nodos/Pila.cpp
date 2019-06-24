@@ -15,12 +15,14 @@ Pila::~Pila() {
 		//Funciones principales
 
 //Añadir a la pila
-void Pila::addPila(Nodo *& pila, string name, int age){
-	Nodo *new_nodo = new Nodo();	//Crear el espacio en memoria
-	new_nodo->name = name;	//Ingresar datos
-	new_nodo->age = age;	//Ingresar datos parte 2
-	new_nodo->next = pila;	//Ingresar el puntero
-	pila = new_nodo;	//Igualar a lo nuevo
+void Pila::addPila(Nodo *& nodo){
+	//Nodo *new_nodo = new Nodo();	//Crear el espacio en memoria
+	//new_nodo->name = name;	//Ingresar datos
+	//new_nodo->age = age;	//Ingresar datos parte 2
+	//new_nodo->next = pila;	//Ingresar el puntero
+	//pila = new_nodo;	//Igualar a lo nuevo
+
+	first = nodo;
 }
 
 //Eliminar de la pila

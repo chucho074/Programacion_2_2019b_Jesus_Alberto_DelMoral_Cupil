@@ -13,7 +13,7 @@
 void f_menu() {
 	Pila C_Pila;
 	bool final = false;
-	Nodo * pila = NULL;
+	//Nodo * pila = NULL;
 	string nam;
 	int age;
 	do{
@@ -31,7 +31,7 @@ void f_menu() {
 				cin >> nam;
 				cout << "Agrega una edad" << endl;
 				cin >> age;
-				C_Pila.addPila(pila, nam, age);
+				C_Pila.addPila(new Nodo( nam, age) );
 				
 			}
 			break;
