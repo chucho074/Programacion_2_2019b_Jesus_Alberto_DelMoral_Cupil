@@ -1,18 +1,17 @@
 //Incluedes
 #pragma once
-#include "Lirberias.h"
+#include "Librerias.h"
 
 //Clase principal
 class Pila {
-
 protected:
-	Nodo * first;
+//	Nodo * first;
 public:
 	//Añadir a la pila
-	void addPila(Nodo *&nodo);
+	void addPila(Nodo *&list, string name, int age);
 
 	//Eliminar de la pila
-	void remPila(Nodo *&pila, string & n, int & a);
+	void remPila(Nodo *&list, string name, int age);
 
 	
 
