@@ -4,10 +4,10 @@
 #include "Pila.h"
 
 
-vector<NodoDoble> VectorNodo;
+
 		//Funciones
 	
 //Funcion menu
 void f_menu();
 
-void f_quicksort(short izq, vector<short> & vectorx, short der);
+void f_quicksort(short izq, vector<NodoDoble> & vectorx, short der);

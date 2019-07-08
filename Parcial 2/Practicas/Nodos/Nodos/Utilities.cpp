@@ -95,13 +95,13 @@ void f_quicksort(short izq, vector<NodoDoble> & vectorx, short der) {
 	NodoDoble piv;
 	i = izq;
 	j = der;
-	piv = vectorx[(izq + der) / 2].age;
+	piv.age = vectorx[(izq + der) / 2].age;
 
 	do {
-		while ((piv > vectorx[i].age) && (j <= der)) {
+		while ((piv.age > vectorx[i].age) && (j <= der)) {
 			i++;
 		}
-		while ((piv < vectorx[j].age) && (j > izq)) {
+		while ((piv.age < vectorx[j].age) && (j > izq)) {
 			j--;
 		}
 		if (i <= j) {
@@ -123,7 +123,7 @@ void f_quicksort(short izq, vector<NodoDoble> & vectorx, short der) {
 
 void aVector(NodoDoble * First, int NodoLong) {
 	unsigned short counter = 0;
-	
+	vector<NodoDoble> VectorNodo;
 	if (counter < NodoLong) {
 		VectorNodo[counter] = *First;
 		if (First->next != nullptr) {

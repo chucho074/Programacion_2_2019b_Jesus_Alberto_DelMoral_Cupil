@@ -35,3 +35,5 @@ struct Nodo {
 	NodoDoble *before;
 };*/
 
+//vector<NodoDoble> VectorNodo;
+
