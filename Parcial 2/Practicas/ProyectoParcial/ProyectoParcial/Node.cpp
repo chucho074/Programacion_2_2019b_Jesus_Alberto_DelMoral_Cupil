@@ -81,7 +81,7 @@ bool SingleNode::operator < (SingleNode &nodo) {
 
 ostream & operator << (ostream & out, SingleNode & node) {
 	//Create the struct of the output for this node
-
+	out << "\n\nThe name is:" << node.getFullName() << "\nThe age is: " << node.getAge() << "\nThe email is: " << node.getEmail();
 	//If is the last node
 	if (node.next == nullptr) {
 		return out;
