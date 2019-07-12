@@ -1,36 +1,37 @@
 //Includes
-#include "Node.hpp"
-
+#include "Node.h"
 
 
 		//Getters
 //Return del nombre
-string Node::getName() {
+const string Node::getName() {
 	return name;
 }
 
 
 //Return del apellido
-string Node::getLastName() {
+const string Node::getLastName() {
 	return lastName;
 }
 
 
 //Return del email
-string Node::getEmail() {
+const string Node::getEmail() {
 	return email;
 }
 
 
 //Return del nombre completo
-string Node::getFullName() {
+const string Node::getFullName() {
 	return lastName, name;
 }
 
 
 //return de la edad actual
-unsigned int Node::getAge() {								//Flag 1 - Terminar
-	return ;
+const unsigned int Node::getAge() {								//Flag 1 - Terminar
+	
+	
+	return 0;
 }
 
 
@@ -70,17 +71,17 @@ void Node::setBirthDate(unsigned char add_BD, unsigned char add_BM, unsigned cha
 
 	//SingleNode
 
-bool SingleNode::operator > (const SingleNode &nodo) {
-	return false;
+bool SingleNode::operator > (SingleNode &nodo) {
+	return this->getAge() > nodo.getAge();
 }
 
-bool SingleNode::operator < (const SingleNode &nodo) {
-	return false;
+bool SingleNode::operator < (SingleNode &nodo) {
+	return this->getAge() < nodo.getAge();
 }
 
-ostream & operator << (ostream & out, const SingleNode & node) {
+ostream & operator << (ostream & out, SingleNode & node) {
 	//Create the struct of the output for this node
-	out << "\n\nThe name is:" << node.getFullName << "\nThe age is: " << node.getAge << "\nThe email is: " << node.getEmail;	
+	//out << "\n\nThe name is:" << node.getFullName << "\nThe age is: " << node.getAge << "\nThe email is: " << node.getEmail;
 	//If is the last node
 	if (node.next == nullptr) {
 		return out;
@@ -95,13 +96,13 @@ ostream & operator << (ostream & out, const SingleNode & node) {
 istream & operator >> (istream & in, SingleNode & node) {
 	// TODO: insertar una instrucción return aquí
 	cout << "Add a name" << endl;
-	in >> node.setName;
+	in >> node.name;
 	cout << "Add a lastName" << endl;
-	in >> node.setLastName;
+	in >> node.lastName;
 	cout << "Add birthday" << endl;
-	in >> node.setBirthDate;
+	in >> node.birthDay;
 	cout << "Add a email" << endl;
-	in >> node.setEmail;
+	in >> node.email;
 	return in;
 }
 
@@ -109,21 +110,23 @@ istream & operator >> (istream & in, SingleNode & node) {
 
 
 	//DoubleNode
-bool DoubleNode::operator > (const DoubleNode & nodo) {
+bool DoubleNode::operator > (DoubleNode & nodo) {
 	return false;
 }
 
-bool DoubleNode::operator < (const DoubleNode & nodo) {
+bool DoubleNode::operator < (DoubleNode & nodo) {
 	return false;
 }
 
 
-ostream & operator << (ostream & out, const DoubleNode &  nodo) {
+ostream & operator << (ostream & out,DoubleNode &  nodo) {
 	// TODO: insertar una instrucción return aquí
+	return out;
 }
 
 istream & operator >> (istream & in, DoubleNode & nodo) {
 	// TODO: insertar una instrucción return aquí
+	return in;
 }
 
 

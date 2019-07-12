@@ -5,10 +5,11 @@
 #include <vector>
 #include <string>
 
+
 //Includes de ".h"
-#include "List.hpp"
-#include "Sort.hpp"
-#include "Node.hpp"
+#include "List.h"
+#include "Sort.h"
+#include "Node.h"
 
 
 
@@ -19,6 +20,6 @@ using std::endl;
 using std::string;
 using std::vector;
 using std::istream;
-using std::ostream
+using std::ostream;
 
 

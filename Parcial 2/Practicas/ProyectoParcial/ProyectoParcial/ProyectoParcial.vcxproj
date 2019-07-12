@@ -116,8 +116,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Librerias.h" />
+    <ClInclude Include="List.h" />
     <ClInclude Include="List.hpp" />
+    <ClInclude Include="Node.h" />
     <ClInclude Include="Node.hpp" />
+    <ClInclude Include="Sort.h" />
     <ClInclude Include="Sort.hpp" />
   </ItemGroup>
   <ItemGroup>

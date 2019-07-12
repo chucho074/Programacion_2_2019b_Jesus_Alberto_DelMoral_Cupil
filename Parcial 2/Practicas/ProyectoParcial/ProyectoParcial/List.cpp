@@ -1,12 +1,13 @@
-#include "List.hpp"
+//Includes
+#include "List.h"
 
-void SingleList::push(SingleNode *) {
+void SingleList::push(SingleNode * Nodo) {
 
 
 }
 
 
-void SingleList::push(SingleNode *, unsigned int) {
+void SingleList::push(SingleNode * Nodo, unsigned int n) {
 
 
 }
@@ -17,7 +18,7 @@ SingleNode * SingleList::pull() {
 }
 
 
-SingleNode * SingleList::pull(unsigned int) {
+SingleNode * SingleList::pull(unsigned int n) {
 	return nullptr;
 }
 
@@ -27,7 +28,7 @@ void SingleList::remove() {
 }
 
 
-void SingleList::remove(unsigned int) {
+void SingleList::remove(unsigned int n) {
 
 }
 
@@ -47,22 +48,24 @@ SingleList::~SingleList() {
 }
 
 
-ostream & operator<<(ostream &, const SingleList &) {
+ostream & operator << (ostream & out , const SingleList &Nodo) {
 	// TODO: insertar una instrucción return aquí
+	return out;
 }
 
 
-ostream & operator<<(ostream &, const DoubleList &) {
+ostream & operator << (ostream & out, const DoubleList & DNodo) {
 	// TODO: insertar una instrucción return aquí
+	return out;
 }
 
 
-void DoubleList::push(DoubleNode *) {
+void DoubleList::push(DoubleNode *DNodo) {
 
 }
 
 
-void DoubleList::push(DoubleNode *, unsigned int) {
+void DoubleList::push(DoubleNode *DNodo, unsigned int n) {
 
 }
 
@@ -72,7 +75,7 @@ DoubleNode * DoubleList::pull() {
 }
 
 
-DoubleNode * DoubleList::pull(unsigned int) {
+DoubleNode * DoubleList::pull(unsigned int n) {
 	return nullptr;
 }
 
@@ -82,7 +85,7 @@ void DoubleList::remove() {
 }
 
 
-void DoubleList::remove(unsigned int) {
+void DoubleList::remove(unsigned int n) {
 
 }
 
