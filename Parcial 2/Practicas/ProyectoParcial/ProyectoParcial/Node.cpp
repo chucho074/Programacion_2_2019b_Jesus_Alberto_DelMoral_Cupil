@@ -1,0 +1,143 @@
+//Includes
+#include "Node.hpp"
+
+
+
+		//Getters
+//Return del nombre
+string Node::getName() {
+	return name;
+}
+
+
+//Return del apellido
+string Node::getLastName() {
+	return lastName;
+}
+
+
+//Return del email
+string Node::getEmail() {
+	return email;
+}
+
+
+//Return del nombre completo
+string Node::getFullName() {
+	return lastName, name;
+}
+
+
+//return de la edad actual
+unsigned int Node::getAge() {								//Flag 1 - Terminar
+	return ;
+}
+
+
+		//Setters
+//Guarda el nombre recibido
+void Node::setName(string add_N) {
+	name = add_N;
+
+}
+
+
+//Guarda el apellido recibido
+void Node::setLastName(string add_LN) {
+	lastName = add_LN;
+
+}
+
+
+//Guarda el email recibido
+void Node::setEmail(string add_E) {
+	email = add_E;
+
+}
+
+
+//Guarda la fecha de nacimiento recibida
+void Node::setBirthDate(unsigned char add_BD, unsigned char add_BM, unsigned char add_BY) {
+	birthDay = add_BD;
+	birthMonth = add_BM;
+	birthYear = add_BY;
+
+}
+
+
+
+			//Functions
+
+	//SingleNode
+
+bool SingleNode::operator > (const SingleNode &nodo) {
+	return false;
+}
+
+bool SingleNode::operator < (const SingleNode &nodo) {
+	return false;
+}
+
+ostream & operator << (ostream & out, const SingleNode & node) {
+	//Create the struct of the output for this node
+	out << "\n\nThe name is:" << node.getFullName << "\nThe age is: " << node.getAge << "\nThe email is: " << node.getEmail;	
+	//If is the last node
+	if (node.next == nullptr) {
+		return out;
+	}
+	//Iterate to get all data
+	else {
+		return out << node.next;
+	}
+	
+}
+
+istream & operator >> (istream & in, SingleNode & node) {
+	// TODO: insertar una instrucción return aquí
+	cout << "Add a name" << endl;
+	in >> node.setName;
+	cout << "Add a lastName" << endl;
+	in >> node.setLastName;
+	cout << "Add birthday" << endl;
+	in >> node.setBirthDate;
+	cout << "Add a email" << endl;
+	in >> node.setEmail;
+	return in;
+}
+
+
+
+
+	//DoubleNode
+bool DoubleNode::operator > (const DoubleNode & nodo) {
+	return false;
+}
+
+bool DoubleNode::operator < (const DoubleNode & nodo) {
+	return false;
+}
+
+
+ostream & operator << (ostream & out, const DoubleNode &  nodo) {
+	// TODO: insertar una instrucción return aquí
+}
+
+istream & operator >> (istream & in, DoubleNode & nodo) {
+	// TODO: insertar una instrucción return aquí
+}
+
+
+
+
+//Destructores
+
+DoubleNode::~DoubleNode(){
+
+
+}
+
+
+SingleNode::~SingleNode() {
+
+
+}

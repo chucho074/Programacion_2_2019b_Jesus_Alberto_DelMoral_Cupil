@@ -1,14 +1,63 @@
 ﻿  Cola.cpp
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\librerias.h(38): error C2065: 'NodoDoble': identificador no declarado
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\librerias.h(38): error C2923: 'std::vector': 'NodoDoble' no es un argumento de tipo de plantilla válido para el parámetro '_Ty'
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\librerias.h(38): error C2903: 'allocator': el símbolo no es plantilla de clase ni plantilla de función
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\librerias.h(38): error C3203: 'allocator': clase plantilla sin especializar no se puede utilizar como argumento de plantilla para el parámetro de plantilla '_Alloc'; se esperaba un tipo real
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\librerias.h(38): error C2133: 'VectorNodo': tamaño desconocido
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\librerias.h(38): error C2512: 'std::vector': no hay disponible un constructor predeterminado adecuado
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector(625): note: vea la declaración de 'std::vector'
   listaEnl.cpp
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\librerias.h(38): error C2065: 'NodoDoble': identificador no declarado
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\librerias.h(38): error C2923: 'std::vector': 'NodoDoble' no es un argumento de tipo de plantilla válido para el parámetro '_Ty'
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\librerias.h(38): error C2903: 'allocator': el símbolo no es plantilla de clase ni plantilla de función
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\librerias.h(38): error C3203: 'allocator': clase plantilla sin especializar no se puede utilizar como argumento de plantilla para el parámetro de plantilla '_Alloc'; se esperaba un tipo real
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\librerias.h(38): error C2133: 'VectorNodo': tamaño desconocido
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\librerias.h(38): error C2512: 'std::vector': no hay disponible un constructor predeterminado adecuado
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector(625): note: vea la declaración de 'std::vector'
   Nodo.cpp
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\librerias.h(38): error C2065: 'NodoDoble': identificador no declarado
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\librerias.h(38): error C2923: 'std::vector': 'NodoDoble' no es un argumento de tipo de plantilla válido para el parámetro '_Ty'
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\librerias.h(38): error C2903: 'allocator': el símbolo no es plantilla de clase ni plantilla de función
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\librerias.h(38): error C3203: 'allocator': clase plantilla sin especializar no se puede utilizar como argumento de plantilla para el parámetro de plantilla '_Alloc'; se esperaba un tipo real
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\librerias.h(38): error C2133: 'VectorNodo': tamaño desconocido
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\librerias.h(38): error C2512: 'std::vector': no hay disponible un constructor predeterminado adecuado
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector(625): note: vea la declaración de 'std::vector'
   NodoDoble.cpp
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\librerias.h(38): error C2065: 'NodoDoble': identificador no declarado
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\librerias.h(38): error C2923: 'std::vector': 'NodoDoble' no es un argumento de tipo de plantilla válido para el parámetro '_Ty'
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\librerias.h(38): error C2903: 'allocator': el símbolo no es plantilla de clase ni plantilla de función
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\librerias.h(38): error C3203: 'allocator': clase plantilla sin especializar no se puede utilizar como argumento de plantilla para el parámetro de plantilla '_Alloc'; se esperaba un tipo real
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\librerias.h(38): error C2133: 'VectorNodo': tamaño desconocido
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\librerias.h(38): error C2512: 'std::vector': no hay disponible un constructor predeterminado adecuado
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector(625): note: vea la declaración de 'std::vector'
   Pila.cpp
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\librerias.h(38): error C2065: 'NodoDoble': identificador no declarado
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\librerias.h(38): error C2923: 'std::vector': 'NodoDoble' no es un argumento de tipo de plantilla válido para el parámetro '_Ty'
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\librerias.h(38): error C2903: 'allocator': el símbolo no es plantilla de clase ni plantilla de función
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\librerias.h(38): error C3203: 'allocator': clase plantilla sin especializar no se puede utilizar como argumento de plantilla para el parámetro de plantilla '_Alloc'; se esperaba un tipo real
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\librerias.h(38): error C2133: 'VectorNodo': tamaño desconocido
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\librerias.h(38): error C2512: 'std::vector': no hay disponible un constructor predeterminado adecuado
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector(625): note: vea la declaración de 'std::vector'
   Source.cpp
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\librerias.h(38): error C2065: 'NodoDoble': identificador no declarado
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\librerias.h(38): error C2923: 'std::vector': 'NodoDoble' no es un argumento de tipo de plantilla válido para el parámetro '_Ty'
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\librerias.h(38): error C2903: 'allocator': el símbolo no es plantilla de clase ni plantilla de función
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\librerias.h(38): error C3203: 'allocator': clase plantilla sin especializar no se puede utilizar como argumento de plantilla para el parámetro de plantilla '_Alloc'; se esperaba un tipo real
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\librerias.h(38): error C2133: 'VectorNodo': tamaño desconocido
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\librerias.h(38): error C2512: 'std::vector': no hay disponible un constructor predeterminado adecuado
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector(625): note: vea la declaración de 'std::vector'
 d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\utilities.h(13): error C2065: 'NodoDoble': identificador no declarado
 d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\utilities.h(13): error C2923: 'std::vector': 'NodoDoble' no es un argumento de tipo de plantilla válido para el parámetro '_Ty'
 d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\utilities.h(13): error C2903: 'allocator': el símbolo no es plantilla de clase ni plantilla de función
 d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\utilities.h(13): error C3203: 'allocator': clase plantilla sin especializar no se puede utilizar como argumento de plantilla para el parámetro de plantilla '_Alloc'; se esperaba un tipo real
   Utilities.cpp
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\librerias.h(38): error C2065: 'NodoDoble': identificador no declarado
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\librerias.h(38): error C2923: 'std::vector': 'NodoDoble' no es un argumento de tipo de plantilla válido para el parámetro '_Ty'
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\librerias.h(38): error C2903: 'allocator': el símbolo no es plantilla de clase ni plantilla de función
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\librerias.h(38): error C3203: 'allocator': clase plantilla sin especializar no se puede utilizar como argumento de plantilla para el parámetro de plantilla '_Alloc'; se esperaba un tipo real
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\librerias.h(38): error C2133: 'VectorNodo': tamaño desconocido
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\librerias.h(38): error C2512: 'std::vector': no hay disponible un constructor predeterminado adecuado
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector(625): note: vea la declaración de 'std::vector'
 d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\utilities.h(13): error C2065: 'NodoDoble': identificador no declarado
 d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\utilities.h(13): error C2923: 'std::vector': 'NodoDoble' no es un argumento de tipo de plantilla válido para el parámetro '_Ty'
 d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\nodos\nodos\utilities.h(13): error C2903: 'allocator': el símbolo no es plantilla de clase ni plantilla de función
