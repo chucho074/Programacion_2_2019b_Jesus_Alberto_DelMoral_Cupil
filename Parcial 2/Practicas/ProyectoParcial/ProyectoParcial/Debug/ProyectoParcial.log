@@ -1,2 +1,5 @@
-﻿  Node.cpp
+﻿  List.cpp
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\proyectoparcial\proyectoparcial\list.cpp(55): warning C4018: '<': no coinciden signed/unsigned
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\proyectoparcial\proyectoparcial\list.cpp(105): warning C4018: '<': no coinciden signed/unsigned
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 2\practicas\proyectoparcial\proyectoparcial\list.cpp(97): warning C4715: 'SingleList::pull': no todas las rutas de acceso de control devuelven un valor
   ProyectoParcial.vcxproj -> D:\Escuela\Segundo cuatri\Progra\REPO\Programacion_2_2019b_Jesus_Alberto_DelMoral_Cupil\Parcial 2\Practicas\ProyectoParcial\Debug\ProyectoParcial.exe

@@ -29,9 +29,15 @@ const string Node::getFullName() {
 
 //return de la edad actual
 const unsigned int Node::getAge() {								//Flag 1 - Terminar
-	
-	
-	return 0;
+	unsigned int age = 19;
+	if (birthYear <= age) {
+		age = age - int((unsigned char)birthYear);
+		return age;
+	}
+	else {
+		age = 0;
+		return age;
+	}
 }
 
 
@@ -59,9 +65,9 @@ void Node::setEmail(string add_E) {
 
 //Guarda la fecha de nacimiento recibida
 void Node::setBirthDate(unsigned char add_BD, unsigned char add_BM, unsigned char add_BY) {
-	birthDay = add_BD;
-	birthMonth = add_BM;
-	birthYear = add_BY;
+	birthDay = (unsigned char)add_BD;
+	birthMonth = (unsigned char) add_BM;
+	birthYear = (unsigned char) add_BY;
 
 }
 

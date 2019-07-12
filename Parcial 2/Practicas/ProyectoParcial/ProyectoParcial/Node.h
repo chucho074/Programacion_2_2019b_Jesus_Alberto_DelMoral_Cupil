@@ -1,12 +1,14 @@
 #pragma once
 //Includes
 //#include "Librerias.h"
-#include "List.h"
+#include <iostream>
 #include <string>
 
 using std::string;
 using std::cout;
 using std::endl;
+using std::ostream;
+using std::istream;
 
 class Sort;
 

@@ -1,21 +1,15 @@
 #pragma once
 
-#include <iostream>
-#include <string>
+#include "Node.h"
 
 class Node;
 class SingleNode;
 class DoubleNode;
 
-using std::ostream;
-using std::istream;
-using std::cout;
-using std::endl;
-
 
 // La lista interfaz hace que las subclases implementen los metoros comunes
 class List {
-private:
+protected:
 
 	//Actualiza el numero actual de elemntos en la lista 
 	unsigned int s;
@@ -35,10 +29,12 @@ public:
 };
 
 class SingleList : public List {
-private:
+protected:
 
 	//El primero nodo en la lista
 	SingleNode ** start;
+
+	friend Sort;
 
 public:
 
@@ -118,11 +114,13 @@ public:
 
 
 class DoubleList : public List {
-private:
+protected:
 	/**
 	 * The very first node on the list
 	 */
 	DoubleNode ** start;
+
+	friend Sort;
 
 public:
 
