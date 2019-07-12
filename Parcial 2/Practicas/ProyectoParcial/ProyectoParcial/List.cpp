@@ -34,7 +34,12 @@ void SingleList::remove(unsigned int n) {
 
 
 void SingleList::clear() {
-
+	if (*(start) != nullptr) {
+		delete * start;
+	}
+	else {
+		cout << "\nEstá vacia la lista"<<endl;
+	}
 }
 
 

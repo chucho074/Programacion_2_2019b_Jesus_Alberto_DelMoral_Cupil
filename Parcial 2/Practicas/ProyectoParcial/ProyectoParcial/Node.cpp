@@ -143,12 +143,16 @@ istream & operator >> (istream & in, DoubleNode & nodo) {
 //Destructores
 
 DoubleNode::~DoubleNode(){
-
+	if (next != nullptr) {
+		delete next;
+	}
 
 }
 
 
 SingleNode::~SingleNode() {
-
+	if (next != nullptr) {
+		delete next;
+	}
 
 }
