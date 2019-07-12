@@ -81,7 +81,7 @@ bool SingleNode::operator < (SingleNode &nodo) {
 
 ostream & operator << (ostream & out, SingleNode & node) {
 	//Create the struct of the output for this node
-	//out << "\n\nThe name is:" << node.getFullName << "\nThe age is: " << node.getAge << "\nThe email is: " << node.getEmail;
+
 	//If is the last node
 	if (node.next == nullptr) {
 		return out;
@@ -119,13 +119,21 @@ bool DoubleNode::operator < (DoubleNode & nodo) {
 }
 
 
-ostream & operator << (ostream & out,DoubleNode &  nodo) {
+ostream & operator << (ostream & out, DoubleNode &  nodo) {
 	// TODO: insertar una instrucción return aquí
 	return out;
 }
 
 istream & operator >> (istream & in, DoubleNode & nodo) {
 	// TODO: insertar una instrucción return aquí
+	cout << "Add a name" << endl;
+	in >> nodo.name;
+	cout << "Add a lastName" << endl;
+	in >> nodo.lastName;
+	cout << "Add birthday" << endl;
+	in >> nodo.birthDay;
+	cout << "Add a email" << endl;
+	in >> nodo.email;
 	return in;
 }
 
