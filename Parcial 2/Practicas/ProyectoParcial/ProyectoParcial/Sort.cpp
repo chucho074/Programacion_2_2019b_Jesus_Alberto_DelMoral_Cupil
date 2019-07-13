@@ -20,7 +20,7 @@ DoubleNode * Sort::swap(DoubleNode * DPtr1, DoubleNode * DPtr2) {	//Cambiar el N
 }
 
 void Sort::bubble(SingleList & List) {
-
+/*
 	SingleNode ** iter;
 	SingleNode * a, *b;
 	unsigned int size = (*start)->size();
@@ -41,7 +41,7 @@ void Sort::bubble(SingleList & List) {
 		}
 		if (!swapped)
 			break;
-	}
+	}*/
 }
 
 void Sort::bubble(DoubleList & DNodo) {

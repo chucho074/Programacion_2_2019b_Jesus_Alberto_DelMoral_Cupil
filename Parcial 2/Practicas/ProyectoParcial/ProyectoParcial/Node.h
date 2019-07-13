@@ -15,7 +15,7 @@ class Sort;
 
 // The Node class that contains the personal data of persons
 class Node {
-protected:
+public:
 
 	// Name of the person
 	string name;
@@ -61,11 +61,7 @@ public:
 	//Ready
 	const string getFullName();
 
-	/**
-	 * TO DO implement
-	 * Returns the calculated age
-	 * @return [unsigned int] The age
-	 */
+	//Ready
 	const unsigned int getAge();
 
 
@@ -92,35 +88,19 @@ protected:
 
 public:
 
-	/**
-	 * TODO implement
-	 * Overrides the ">" operator allowing: (SingleNode & > SingleNode &)
-	 * @param [const SingleNode &] The right side of the operation
-	 * @return [bool] Whether is the left side is greater than the right side
-	 */
+	//Ready
 	bool operator > (SingleNode &);
 
-	/**
-	 * TODO implement
-	 * Overrides the "<" operator allowing: (SingleNode & < SingleNode &)
-	 * @param [const SingleNode &] The right side of the operation
-	 * @return [bool] Whether is the left side is lower than the right side
-	 */
+	//Ready
 	bool operator < (SingleNode &);
 
-	/**
-	 * TODO implement
-	 * Concatenates the full data of this nodes and the followings to the output stream
-	 */
+	//Ready
 	friend ostream & operator << (ostream &, SingleNode &);
 
 	//Ready
 	friend istream & operator >> (istream &, SingleNode &);
 
-	/**
-	 * TODO implement
-	 * Deletes every linked node
-	 */
+	//Ready
 	virtual ~SingleNode();
 };
 

@@ -107,6 +107,8 @@ istream & operator >> (istream & in, SingleNode & node) {
 	in >> node.lastName;
 	cout << "Add birthday" << endl;
 	in >> node.birthDay;
+	in >> node.birthMonth;
+	in >> node.birthYear;
 	cout << "Add a email" << endl;
 	in >> node.email;
 	return in;

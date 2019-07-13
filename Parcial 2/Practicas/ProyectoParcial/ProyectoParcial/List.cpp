@@ -3,7 +3,7 @@
 
 //Al final xd
 void SingleList::push(SingleNode * SNode) {
-	if (*start != nullptr) {
+	if (start != nullptr) {
 		SingleNode * Temp = *start;
 		SingleNode * Prev = nullptr;
 		while (Temp != nullptr) {
@@ -13,7 +13,7 @@ void SingleList::push(SingleNode * SNode) {
 		Prev->next = SNode;
 	}
 	else {
-		*start = SNode;
+		start = &SNode;
 	}
 	s++;
 }
