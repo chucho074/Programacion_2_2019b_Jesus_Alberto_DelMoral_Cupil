@@ -20,7 +20,6 @@ User::~User() {
 
 void User::preO() {
 
-	
 	cout << apellido << " " << nombre << " " << edad << std::endl;
 	if (izq != nullptr) {
 		 izq->preO();
@@ -33,11 +32,11 @@ void User::preO() {
 void User::inO() {
 
 	if (izq != nullptr) {
-		izq->preO();
+		izq->inO();
 	}
 	cout << apellido << " " << nombre << " " << edad << std::endl;
 	if (der != nullptr) {
-		der->preO();
+		der->inO();
 	}
 
 	
@@ -46,10 +45,10 @@ void User::inO() {
 void User::postO() {
 
 	if (izq != nullptr) {
-		izq->preO();
+		izq->postO();
 	}
 	if (der != nullptr) {
-		der->preO();
+		der->postO();
 	}
 	cout << apellido << " " << nombre << " " << edad << std::endl;
 
