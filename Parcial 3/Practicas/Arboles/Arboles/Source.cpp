@@ -7,6 +7,9 @@ int main() {
 	arbolito->izq = new User("Leo", "Suarez", 5);
 	arbolito->der->izq = new User("Majo", "Tapia",4);
 	arbolito->der->der = new User("Papo", "Tapia", 3);
+	User *f = new User("Pablo", "Perez", 19);
+	arbolito->add(f);
+
 
 
 	bool menu = true;

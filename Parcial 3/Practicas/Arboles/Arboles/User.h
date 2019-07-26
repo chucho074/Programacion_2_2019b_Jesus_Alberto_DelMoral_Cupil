@@ -25,6 +25,8 @@ public:
 
 	void postO();
 
+	void add(User *newUser);
+
 
 
 };
