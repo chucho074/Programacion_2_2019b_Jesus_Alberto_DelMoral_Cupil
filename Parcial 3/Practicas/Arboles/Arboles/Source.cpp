@@ -3,10 +3,14 @@
 
 int main() {
 	User *arbolito = new User("Jesus","Cupil",19);
-	arbolito->der = new User("Jose", "Perez", 29);
-	arbolito->izq = new User("Leo", "Suarez", 5);
-	arbolito->der->izq = new User("Majo", "Tapia",4);
-	arbolito->der->der = new User("Papo", "Tapia", 3);
+	User *a = new User("Jose", "Perez", 29);
+	arbolito->add(a);
+	User *b = new User("Leo", "Suarez", 5);
+	arbolito->add(b);
+	User *c = new User("Majo", "Tapia",4);
+	arbolito->add(c);
+	User *d = new User("Papo", "Tapia", 3);
+	arbolito->add(d);
 	User *f = new User("Pablo", "Perez", 19);
 	arbolito->add(f);
 
