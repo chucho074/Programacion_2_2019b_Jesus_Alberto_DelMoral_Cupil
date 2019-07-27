@@ -32,7 +32,6 @@ void User::preO() {
 
 
 void User::inO() {
-
 	if (izq != nullptr) {
 		izq->inO();
 	}
@@ -40,8 +39,6 @@ void User::inO() {
 	if (der != nullptr) {
 		der->inO();
 	}
-
-	
 }
 
 
