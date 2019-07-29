@@ -40,3 +40,19 @@
 *.vcxproj.user
 
 /Debug/*
+*.db
+Parcial 3/Practicas/Arboles/.vs/Arboles/v15/.suo
+*.ipch
+*.vcxproj
+*.filters
+*.log
+*.tlog
+*.tlog
+*.tlog
+*.tlog
+*.tlog
+*.tlog
+*.idb
+*.pdb
+*.ilk
+*.pdb

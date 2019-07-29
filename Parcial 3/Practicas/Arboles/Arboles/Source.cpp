@@ -1,18 +1,19 @@
 #include <iostream>
 #include "User.h"
+#include "Arbol.h"
 
 int main() {
-	User *arbolito = new User("Jesus","Cupil",19);
+	Arbol arbolito;
 	User *a = new User("Jose", "Perez", 29);
-	arbolito->add(a);
+	arbolito.add(a);
 	User *b = new User("Leo", "Suarez", 5);
-	arbolito->add(b);
+	arbolito.add(b);
 	User *c = new User("Majo", "Tapia",4);
-	arbolito->add(c);
+	arbolito.add(c);
 	User *d = new User("Papo", "Tapia", 3);
-	arbolito->add(d);
+	arbolito.add(d);
 	User *f = new User("Pablo", "Perez", 19);
-	arbolito->add(f);
+	arbolito.add(f);
 
 
 
@@ -26,17 +27,17 @@ int main() {
 		std::cin>>opcion;
 		switch (opcion) {
 			case 'i': {
-				arbolito->inO();
+				arbolito.inO();
 				break;
 			}
 
 			case 'p': {
-				arbolito->preO();
+				arbolito.preO();
 				break;
 			}
 
 			case 'o': {
-				arbolito->postO();
+				arbolito.postO();
 				break;
 			}
 			
@@ -53,7 +54,7 @@ int main() {
 		
 	}
 
-	delete arbolito;
+	//delete arbolito;
 	std::cin.clear();
 	std::cin.get();
 	return 0;

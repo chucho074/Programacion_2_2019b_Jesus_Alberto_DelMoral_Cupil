@@ -2,7 +2,11 @@
 
 
 //Constructor
-User::User(string ape, string nom, int eda) {
+User::User() {
+
+}
+
+User::User(string ape, string nom, unsInt eda) {
 	apellido = ape;
 	nombre = nom;
 	edad = eda;
@@ -30,7 +34,7 @@ void User::preO() {
 	}
 }
 
-
+//InOrden
 void User::inO() {
 	if (izq != nullptr) {
 		izq->inO();
@@ -41,7 +45,7 @@ void User::inO() {
 	}
 }
 
-
+//PostOrden
 void User::postO() {
 
 	if (izq != nullptr) {
@@ -54,14 +58,14 @@ void User::postO() {
 
 }
 
-
+//Añadir usuario nuevo
 void User::add(User *newUser) {
 	if (newUser->apellido < apellido) {
 		if (izq == nullptr) {
 			izq = newUser;
 		}
 		else if (izq != nullptr) {
-			izq = newUser;
+			izq->add(newUser);
 		}
 	}
 	else if (newUser->apellido > apellido) {
@@ -69,7 +73,7 @@ void User::add(User *newUser) {
 			der = newUser;
 		}
 		else if (der != nullptr) {
-			der = newUser;
+			der->add(newUser);
 		}
 	}
 	else {
@@ -107,5 +111,26 @@ void User::add(User *newUser) {
 				}
 			}
 		}
+	}
+}
+
+void User::balUser(User * Node, unsInt cont, User * temp) {
+
+	Nivel = cont;
+	if (izq != nullptr) {
+		cont++;
+		izq->balUser(Node->izq, cont, Node);
+		balIzq = izq->pesoAct;
+		pesoAct = ((Nivel * balDer) + (Nivel * balIzq));
+		temp->balIzq = pesoAct;
+	}	
+	if (der != nullptr) {
+		cont++;
+		der->balUser(Node->der, cont, Node);
+		pesoAct = ((Nivel * balDer) + (Nivel * balIzq));
+		temp->balDer = pesoAct;
+	}
+	else {
+		temp->pesoAct = temp->Nivel;
 	}
 }
