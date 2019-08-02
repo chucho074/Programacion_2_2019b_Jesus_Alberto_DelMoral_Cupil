@@ -25,7 +25,7 @@ User::~User() {
 
 //PreOrden
 void User::preO() {
-	cout << apellido << " " << nombre << " " << edad << std::endl;
+	cout << this;
 	if (izq != nullptr) {
 		 izq->preO();
 	}
@@ -39,7 +39,7 @@ void User::inO() {
 	if (izq != nullptr) {
 		izq->inO();
 	}
-	cout << apellido << " " << nombre << " " << edad << std::endl;
+	cout << this;
 	if (der != nullptr) {
 		der->inO();
 	}
@@ -54,7 +54,7 @@ void User::postO() {
 	else if (der != nullptr) {
 		der->postO();
 	}
-	cout << apellido << " " << nombre << " " << edad << std::endl;
+	cout << this;
 
 }
 
@@ -114,6 +114,7 @@ void User::add(User *newUser) {
 	}
 }
 
+
 void User::balUser(User * Node, unsInt cont, User * temp) {
 
 	Nivel = cont;
@@ -133,4 +134,66 @@ void User::balUser(User * Node, unsInt cont, User * temp) {
 	else {
 		temp->pesoAct = temp->Nivel;
 	}
+}
+
+
+void User::serch(User * Node, string value) {
+	//Si no es igual al primero
+	if (value != Node->apellido) {
+		//Si es menor que ese
+		if (value < Node->apellido) {
+			serch(izq, value);
+		}
+		//Si es mayor que ese
+		if (!(value < Node->apellido)) {
+			serch(der, value);
+		}
+
+	}
+	//Devolvemos el valor de 
+	else {
+		
+	}
+
+}
+
+void User::erase() {
+
+
+
+}
+
+
+
+
+bool User::operator < (User & a) {
+	// TODO: insertar una instrucción return aquí
+	if (apellido != a.apellido) {
+		if (!(a.apellido < apellido)) {
+			return apellido < a.apellido;
+		}
+	}
+
+	else if (nombre != a.nombre) {
+		if (!(a.nombre < nombre)) {
+			return nombre < a.nombre;
+		}
+	}
+
+	else if (edad != a.edad) {
+		if (!(a.edad < edad)) {
+			return edad < a.edad;
+		}
+	}
+
+	else {
+		return !(apellido < a.apellido);
+	}
+
+}
+
+
+std::ostream & User::operator << (std::ostream & out) {
+	out << nombre << " " << apellido << " " << edad << std::endl;
+	return out;
 }

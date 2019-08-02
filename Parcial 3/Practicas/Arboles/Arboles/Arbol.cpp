@@ -63,3 +63,11 @@ void Arbol::balance(User * First) {
 		First->balUser(First->der, cont, nullptr);
 	}
 }
+
+
+void Arbol::erase(User * First) {
+	string valSerch;
+	std::cin >> valSerch;
+	serch(arbolito, valSerch);
+
+}

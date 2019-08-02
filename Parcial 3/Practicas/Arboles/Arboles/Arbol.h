@@ -20,5 +20,7 @@ public:
 	void add(User *&newUser);
 
 	void balance(User * First);
+
+	void erase(User * First);
 };
 

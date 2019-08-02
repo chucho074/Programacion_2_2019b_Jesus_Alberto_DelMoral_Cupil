@@ -13,8 +13,8 @@ private:
 	unsInt balIzq = 0;
 	unsInt balDer = 0;
 	unsInt pesoAct = 0;
-	
-	
+
+
 
 public:
 	User();
@@ -41,5 +41,12 @@ public:
 
 	void balUser(User *, unsInt, User *);
 
+	void serch(User *, string);
+
+	void erase();
+
+	bool operator < (User & a);
+
+	std::ostream & operator << (std::ostream &);
 };
 
