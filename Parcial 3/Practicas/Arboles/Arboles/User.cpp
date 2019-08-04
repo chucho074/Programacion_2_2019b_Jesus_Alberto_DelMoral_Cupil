@@ -158,11 +158,22 @@ User User::serch(User * Node, string value) {
 }
 
 //Borrado de un nodo
-void User::erase(User * Node) {
+void User::erase(User * Node, string delAp, string delNa, int delAge) {
 	
-	User * temp = nullptr;
+	User * temp = nullptr;	//Nodo con el valor buscado
+	//Busca al nodo
 	if ((der != nullptr) && (izq != nullptr)) {
-		
+		if (apellido != delAp) {	//Si no es en el que estamos
+			if (apellido < delAp) {	//Revisar el de la izquierda en caso de ser menor
+				if (izq->apellido == delAp) {	//Revisa que el apellido de el nodo de la izq. sea igual al recibido
+					temp = izq;	//Lo guarda en el temporal
+				}
+				
+			}
+			else if (apellido > delAp) {	//Revisa el de la derecha en caso de ser mayor
+
+			}
+		}
 	}
 	else {
 		delete Node;

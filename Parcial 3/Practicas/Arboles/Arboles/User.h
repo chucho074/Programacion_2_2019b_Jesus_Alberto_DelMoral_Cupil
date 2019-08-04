@@ -39,7 +39,7 @@ public:
 
 	User serch(User *, string);
 
-	void erase(User *);
+	void erase(User *, string, string, int);
 
 	bool operator < (User & a);
 

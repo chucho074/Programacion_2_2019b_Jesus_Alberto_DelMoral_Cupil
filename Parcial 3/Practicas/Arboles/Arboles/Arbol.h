@@ -22,5 +22,9 @@ public:
 	void balance(User * First);
 
 	void erase(User * First);
+
+	void Delete(string);
+
+
 };
 
