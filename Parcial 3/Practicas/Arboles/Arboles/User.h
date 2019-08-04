@@ -14,8 +14,6 @@ private:
 	unsInt balDer = 0;
 	unsInt pesoAct = 0;
 
-
-
 public:
 	User();
 	User(string apellido, string nombre, unsInt edad);
@@ -29,8 +27,6 @@ public:
 
 	~User();
 
-
-
 	void preO();
 
 	void inO();
@@ -41,11 +37,13 @@ public:
 
 	void balUser(User *, unsInt, User *);
 
-	void serch(User *, string);
+	User serch(User *, string);
 
-	void erase();
+	void erase(User *);
 
 	bool operator < (User & a);
+
+	bool operator > (User & a);
 
 	std::ostream & operator << (std::ostream &);
 };

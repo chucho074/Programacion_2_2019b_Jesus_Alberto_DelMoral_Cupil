@@ -17,7 +17,6 @@ Arbol::~Arbol() {
 	}
 }
 
-
 //PreOrden Arbol
 void Arbol::preO() {
 	
@@ -51,6 +50,7 @@ void Arbol::add(User *&newUser) {
 	}
 }
 
+//
 void Arbol::balance(User * First) {
 
 	if (First->izq != nullptr) {
@@ -64,10 +64,12 @@ void Arbol::balance(User * First) {
 	}
 }
 
-
+//
 void Arbol::erase(User * First) {
+	
 	string valSerch;
 	std::cin >> valSerch;
 	serch(arbolito, valSerch);
+
 
 }

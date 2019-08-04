@@ -6,12 +6,12 @@ User::User() {
 
 }
 
+//
 User::User(string ape, string nom, unsInt eda) {
 	apellido = ape;
 	nombre = nom;
 	edad = eda;
 }
-
 
 //Destructor del arbol
 User::~User() {
@@ -114,7 +114,7 @@ void User::add(User *newUser) {
 	}
 }
 
-
+//Revisar si esta balanceado el arbol
 void User::balUser(User * Node, unsInt cont, User * temp) {
 
 	Nivel = cont;
@@ -136,8 +136,9 @@ void User::balUser(User * Node, unsInt cont, User * temp) {
 	}
 }
 
+//Busqueda en un valor
+User User::serch(User * Node, string value) {
 
-void User::serch(User * Node, string value) {
 	//Si no es igual al primero
 	if (value != Node->apellido) {
 		//Si es menor que ese
@@ -145,43 +146,47 @@ void User::serch(User * Node, string value) {
 			serch(izq, value);
 		}
 		//Si es mayor que ese
-		if (!(value < Node->apellido)) {
+		else if (value > Node->apellido) {
 			serch(der, value);
 		}
-
 	}
 	//Devolvemos el valor de 
 	else {
-		
+		return *Node;
 	}
 
 }
 
-void User::erase() {
-
-
-
+//Borrado de un nodo
+void User::erase(User * Node) {
+	
+	User * temp = nullptr;
+	if ((der != nullptr) && (izq != nullptr)) {
+		
+	}
+	else {
+		delete Node;
+	}
+	delete temp;
 }
 
-
-
-
+//Sobrecarga del operador menor que 
 bool User::operator < (User & a) {
-	// TODO: insertar una instrucción return aquí
+	
 	if (apellido != a.apellido) {
-		if (!(a.apellido < apellido)) {
+		if (a.apellido > apellido) {
 			return apellido < a.apellido;
 		}
 	}
 
 	else if (nombre != a.nombre) {
-		if (!(a.nombre < nombre)) {
+		if (a.nombre > nombre) {
 			return nombre < a.nombre;
 		}
 	}
 
 	else if (edad != a.edad) {
-		if (!(a.edad < edad)) {
+		if (a.edad > edad) {
 			return edad < a.edad;
 		}
 	}
@@ -192,7 +197,34 @@ bool User::operator < (User & a) {
 
 }
 
+//Sobrecarga de operador mayor que 
+bool User::operator > (User & a) {
 
+	if (apellido != a.apellido) {
+		if (a.apellido < apellido) {
+			return apellido > a.apellido;
+		}
+	}
+
+	else if (nombre != a.nombre) {
+		if (a.nombre < nombre) {
+			return nombre > a.nombre;
+		}
+	}
+
+	else if (edad != a.edad) {
+		if (a.edad < edad) {
+			return edad > a.edad;
+		}
+	}
+
+	else {
+		return !(apellido > a.apellido);
+	}
+
+}
+
+//Sobrecarga de operador de salida
 std::ostream & User::operator << (std::ostream & out) {
 	out << nombre << " " << apellido << " " << edad << std::endl;
 	return out;
