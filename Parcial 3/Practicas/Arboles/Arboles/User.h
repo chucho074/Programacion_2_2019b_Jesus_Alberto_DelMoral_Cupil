@@ -1,12 +1,14 @@
 #pragma once
 #include <string>
 #include <iostream>
+#include "Persona.h"
 
 using std::string;
 using std::cout;
 
 typedef unsigned int unsInt;
 
+template <class T>
 class User {
 private:
 	unsInt Nivel = 0;
@@ -15,17 +17,23 @@ private:
 	unsInt pesoAct = 0;
 
 public:
+
+	//Holis
 	User();
-	User(string apellido, string nombre, unsInt edad);
-	string apellido;
-	string nombre;
-	unsInt edad;
+	User(T info);
+	~User();
+
+	T data;
+
+	//User(string apellido, string nombre, unsInt edad);
+	//string apellido;
+	//string nombre;
+	//unsInt edad;
 
 	//Nodos siguientes
 	User *izq = nullptr;
 	User *der = nullptr;
 
-	~User();
 
 	void preO();
 
@@ -33,17 +41,17 @@ public:
 
 	void postO();
 
-	void add(User *newUser);
+	void add(User<T> *newUser);
 
-	void balUser(User *, unsInt, User *);
+	void balUser(User<T> *, unsInt, User<T> *);
 
-	User serch(User *, string);
+	User<T> serch(User<T> *, string);
 
-	void erase(User *, string, string, int);
+	void erase(User<T> *, string, string, int);
 
-	bool operator < (User & a);
+	bool operator < (User<T> & a);
 
-	bool operator > (User & a);
+	bool operator > (User<T> & a);
 
 	std::ostream & operator << (std::ostream &);
 };

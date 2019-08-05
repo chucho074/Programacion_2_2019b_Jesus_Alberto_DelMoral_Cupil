@@ -1,13 +1,16 @@
 #pragma once
 #include "User.h"
-class Arbol : public User {
+
+template <class T>
+class Arbol : public User<T> {
 private:
 	unsigned int cont = 0;
 public:
-	User * arbolito;
+	User<T> * arbolito;
 	
 	Arbol();
-	Arbol(string Name, string LastName, int Age);
+	Arbol(User<T> * arbol);
+	//Arbol(string Name, string LastName, int Age);
 	~Arbol();
 
 
@@ -17,11 +20,11 @@ public:
 
 	void postO();
 
-	void add(User *&newUser);
+	void add(User<T> *&newUser);
 
-	void balance(User * First);
+	void balance(User<T> * First);
 
-	void erase(User * First);
+	//void erase(User * First);
 
 	void Delete(string);
 

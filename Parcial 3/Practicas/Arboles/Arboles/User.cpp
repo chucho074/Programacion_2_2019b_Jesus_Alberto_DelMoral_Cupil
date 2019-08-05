@@ -1,20 +1,31 @@
 #include "User.h"
 
 
-//Constructor
-User::User() {
+template<class T>
+User<T>::User(T info) {
+	data = info;
+	izq = nullptr;
+	der = nullptr;
+}
 
+//Constructor
+template<class T>
+User<T>::User() {
+	izq = nullptr;
+	der = nullptr;
 }
 
 //
-User::User(string ape, string nom, unsInt eda) {
-	apellido = ape;
-	nombre = nom;
-	edad = eda;
-}
+//template<class T>
+//User<T>::User(string ape, string nom, unsInt eda) {
+//	apellido = ape;
+//	nombre = nom;
+//	edad = eda;
+//}
 
 //Destructor del arbol
-User::~User() {
+template<class T>
+User<T>::~User() {
 	if (izq != nullptr) {
 		delete izq;
 	}
@@ -24,8 +35,9 @@ User::~User() {
 }
 
 //PreOrden
-void User::preO() {
-	cout << this;
+template<class T>
+void User<T>::preO() {
+	cout << data;
 	if (izq != nullptr) {
 		 izq->preO();
 	}
@@ -35,18 +47,20 @@ void User::preO() {
 }
 
 //InOrden
-void User::inO() {
+template<class T>
+void User<T>::inO() {
 	if (izq != nullptr) {
 		izq->inO();
 	}
-	cout << this;
+	cout << data;
 	if (der != nullptr) {
 		der->inO();
 	}
 }
 
 //PostOrden
-void User::postO() {
+template<class T>
+void User<T>::postO() {
 
 	if (izq != nullptr) {
 		izq->postO();
@@ -54,13 +68,14 @@ void User::postO() {
 	else if (der != nullptr) {
 		der->postO();
 	}
-	cout << this;
+	cout << data;
 
 }
 
 //Añadir usuario nuevo
-void User::add(User *newUser) {
-	if (newUser->apellido < apellido) {
+template<class T>
+void User<T>::add(User<T> *newUser) {
+	if (*this < *newUser) {
 		if (izq == nullptr) {
 			izq = newUser;
 		}
@@ -68,7 +83,7 @@ void User::add(User *newUser) {
 			izq->add(newUser);
 		}
 	}
-	else if (newUser->apellido > apellido) {
+	else if (*this > *newUser) {
 		if (der == nullptr) {
 			der = newUser;
 		}
@@ -76,46 +91,11 @@ void User::add(User *newUser) {
 			der->add(newUser);
 		}
 	}
-	else {
-		if (newUser->nombre > nombre) {
-			if (izq != nullptr) {
-				izq->add(newUser);
-			}
-			else {
-				izq = newUser;
-			}
-		}
-		else if (newUser->nombre < nombre) {
-			if (der != nullptr) {
-				der->add(newUser);
-			}
-			else {
-				der = newUser;
-			}
-		}
-		else {
-			if (newUser->edad > edad) {
-				if (izq != nullptr) {
-					izq->add(newUser);
-				}
-				else {
-					izq = newUser;
-				}
-			}
-			else if (newUser->edad < edad) {
-				if (der != nullptr) {
-					der->add(newUser);
-				}
-				else {
-					der = newUser;
-				}
-			}
-		}
-	}
 }
 
 //Revisar si esta balanceado el arbol
-void User::balUser(User * Node, unsInt cont, User * temp) {
+template<class T>
+void User<T>::balUser(User<T> * Node, unsInt cont, User<T> * temp) {
 
 	Nivel = cont;
 	if (izq != nullptr) {
@@ -137,16 +117,17 @@ void User::balUser(User * Node, unsInt cont, User * temp) {
 }
 
 //Busqueda en un valor
-User User::serch(User * Node, string value) {
+template<class T>
+User<T> User<T>::serch(User * Node, string value) {
 
 	//Si no es igual al primero
-	if (value != Node->apellido) {
+	if (!(Node->data == value)) {
 		//Si es menor que ese
-		if (value < Node->apellido) {
+		if (Node->data > value) {
 			serch(izq, value);
 		}
 		//Si es mayor que ese
-		else if (value > Node->apellido) {
+		else if (Node->data < value) {
 			serch(der, value);
 		}
 	}
@@ -158,19 +139,20 @@ User User::serch(User * Node, string value) {
 }
 
 //Borrado de un nodo
-void User::erase(User * Node, string delAp, string delNa, int delAge) {
+template<class T>
+void User<T>::erase(User<T> * Node, string delAp, string delNa, int delAge) {
 	
 	User * temp = nullptr;	//Nodo con el valor buscado
 	//Busca al nodo
 	if ((der != nullptr) && (izq != nullptr)) {
-		if (apellido != delAp) {	//Si no es en el que estamos
-			if (apellido < delAp) {	//Revisar el de la izquierda en caso de ser menor
-				if (izq->apellido == delAp) {	//Revisa que el apellido de el nodo de la izq. sea igual al recibido
+		if (!(data == delAp)) {	//Si no es en el que estamos
+			if (data < delAp) {	//Revisar el de la izquierda en caso de ser menor
+				if (izq->data == delAp) {	//Revisa que el apellido de el nodo de la izq. sea igual al recibido
 					temp = izq;	//Lo guarda en el temporal
 				}
 				
 			}
-			else if (apellido > delAp) {	//Revisa el de la derecha en caso de ser mayor
+			else if (data > delAp) {	//Revisa el de la derecha en caso de ser mayor
 
 			}
 		}
@@ -181,62 +163,75 @@ void User::erase(User * Node, string delAp, string delNa, int delAge) {
 	delete temp;
 }
 
-//Sobrecarga del operador menor que 
-bool User::operator < (User & a) {
-	
-	if (apellido != a.apellido) {
-		if (a.apellido > apellido) {
-			return apellido < a.apellido;
-		}
-	}
-
-	else if (nombre != a.nombre) {
-		if (a.nombre > nombre) {
-			return nombre < a.nombre;
-		}
-	}
-
-	else if (edad != a.edad) {
-		if (a.edad > edad) {
-			return edad < a.edad;
-		}
-	}
-
-	else {
-		return !(apellido < a.apellido);
-	}
-
+template<class T>
+bool User<T>::operator<(User<T>& a)
+{
+	return data < a.data;
 }
+
+//Sobrecarga del operador menor que 
+//template<class T>
+//bool User<T>::operator < (User<T> & a) {
+//	
+//	if (apellido != a.apellido) {
+//		if (a.apellido > apellido) {
+//			return apellido < a.apellido;
+//		}
+//	}
+//
+//	else if (nombre != a.nombre) {
+//		if (a.nombre > nombre) {
+//			return nombre < a.nombre;
+//		}
+//	}
+//
+//	else if (edad != a.edad) {
+//		if (a.edad > edad) {
+//			return edad < a.edad;
+//		}
+//	}
+//
+//	else {
+//		return !(apellido < a.apellido);
+//	}
+//
+//}
 
 //Sobrecarga de operador mayor que 
-bool User::operator > (User & a) {
+template<class T>
+bool User<T>::operator > (User & a) {
 
-	if (apellido != a.apellido) {
-		if (a.apellido < apellido) {
-			return apellido > a.apellido;
-		}
-	}
-
-	else if (nombre != a.nombre) {
-		if (a.nombre < nombre) {
-			return nombre > a.nombre;
-		}
-	}
-
-	else if (edad != a.edad) {
-		if (a.edad < edad) {
-			return edad > a.edad;
-		}
-	}
-
-	else {
-		return !(apellido > a.apellido);
-	}
-
+	//if (apellido != a.apellido) {
+	//	if (a.apellido < apellido) {
+	//		return apellido > a.apellido;
+	//	}
+	//}
+	//
+	//else if (nombre != a.nombre) {
+	//	if (a.nombre < nombre) {
+	//		return nombre > a.nombre;
+	//	}
+	//}
+	//
+	//else if (edad != a.edad) {
+	//	if (a.edad < edad) {
+	//		return edad > a.edad;
+	//	}
+	//}
+	//
+	//else {
+	//	return !(apellido > a.apellido);
+	//}
+	
+	return data > a.data;
 }
 
-//Sobrecarga de operador de salida
-std::ostream & User::operator << (std::ostream & out) {
-	out << nombre << " " << apellido << " " << edad << std::endl;
-	return out;
-}
+////Sobrecarga de operador de salida
+//template<class T>
+//std::ostream & User<T>::operator << (std::ostream & out) {
+//	out << nombre << " " << apellido << " " << edad << std::endl;
+//	return out;
+//}
+
+
+template class User<Persona>;
