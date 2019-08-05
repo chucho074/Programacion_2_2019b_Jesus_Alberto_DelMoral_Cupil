@@ -3,9 +3,9 @@
 
 
 Persona::Persona() {
-	cin >> nombre;
-	cin >> apellido;
-	cin >> edad;
+	//cin >> nombre;
+	//cin >> apellido;
+	//cin >> edad;
 }
 
 Persona::Persona(std::string ape, std::string nom, unsInt eda) {

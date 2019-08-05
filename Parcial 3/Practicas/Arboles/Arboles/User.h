@@ -53,6 +53,6 @@ public:
 
 	bool operator > (User<T> & a);
 
-	std::ostream & operator << (std::ostream &);
+	//std::ostream & operator << (std::ostream &);
 };
 

@@ -26,7 +26,11 @@ public:
 
 	//void erase(User * First);
 
-	void Delete(string);
+	//void Delete(string);
+
+	void rotIzq(User<T> * a);
+
+	void rotDer(User<T> * a);
 
 
 };

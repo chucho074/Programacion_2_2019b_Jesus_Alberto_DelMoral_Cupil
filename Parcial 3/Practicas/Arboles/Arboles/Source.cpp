@@ -4,10 +4,19 @@
 
 int main() {
 	Arbol<Persona> * arbolito = new Arbol<Persona>();
-	User<Persona> * a = new User<Persona>(Persona("Jose", "Perez", 29));
-	a->add(a);
-	
-	
+	User<Persona> * a = new User<Persona>(Persona("J", "P", 5));
+	arbolito->add(a);
+	a = new User<Persona>(Persona("J", "P", 3));
+	arbolito->add(a);
+	a = new User<Persona>(Persona("J", "P", 7));
+	arbolito->add(a);
+	a = new User<Persona>(Persona("J", "P", 2));
+	arbolito->add(a);
+	a = new User<Persona>(Persona("J", "P", 4));
+	arbolito->add(a);
+
+
+
 	//User *b = new User("Leo", "Suarez", 5);
 	//arbolito.add(b);
 	//User *c = new User("Majo", "Tapia",4);
@@ -40,6 +49,11 @@ int main() {
 
 			case 'o': {
 				arbolito->postO();
+				break;
+			}
+			case 'a': {
+			//	User<Persona> *ser = new User<Persona>(arbolito->serch(arbolito, 5));
+			//	arbolito->rotDer(ser);
 				break;
 			}
 			

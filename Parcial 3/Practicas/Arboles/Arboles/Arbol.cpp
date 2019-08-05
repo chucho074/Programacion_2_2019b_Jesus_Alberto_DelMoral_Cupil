@@ -40,6 +40,7 @@ void Arbol<T>::inO() {
 	if (arbolito != nullptr) {
 		arbolito->inO();
 	}
+	
 }
 
 //PostOrden Arbol
@@ -194,7 +195,45 @@ void Arbol<T>::balance(User<T> * First) {
 //
 //		}
 //	}
-//}
+//
 
+//Funcion de rotacion izquierda
+template <class T>
+void Arbol<T>::rotIzq(User<T> * a) {
+
+	//Declaramos los punteros a utilizar 
+	User<T> * temp = new User<T>();
+	User<T> * movNode = new User<T>();
+
+	//En base al dato obtenido igualamos nuestros punteros
+	temp = a->der;
+	movNode = temp->izq;
+
+	//Swapeamos los nodos
+	a->der = movNode;
+	temp->izq = a;
+
+}
+
+//Funcion de rotacion derecha
+template <class T>
+void Arbol<T>::rotDer(User<T> * a) {
+	//Se moverá el nodo derecho del que se convertirá en el padre
+	//Se conectará el antiguo padre al nuevo padre 
+	//Se le conectará el nodo que era derecho del anterior a su izquierda
+
+	//Creamos loss punteros
+	User<T> * temp = new User<T>();
+	User<T> * movNode = new User<T>();
+
+	//Los igualamos a lo requerido
+	temp = a->izq;			
+	movNode = temp->der;	
+
+	//Swap
+	a->izq = movNode;
+	temp->der = a;
+
+}
 
 template class Arbol<Persona>;

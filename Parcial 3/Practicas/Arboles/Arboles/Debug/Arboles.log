@@ -1,16 +1,6 @@
 ﻿  Arbol.cpp
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\arbol.cpp(200): warning C4661: 'void Arbol<Persona>::Delete(std::string)': no se ha proporcionado una definición adecuada para la solicitud de creación de instancias de plantillas explícitas
-  d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\arbol.h(29): note: vea la declaración de 'Arbol<Persona>::Delete'
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\arbol.cpp(10): warning C4661: 'void Arbol<Persona>::Delete(std::string)': no se ha proporcionado una definición adecuada para la solicitud de creación de instancias de plantillas explícitas
-  d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\arbol.h(29): note: vea la declaración de 'Arbol<Persona>::Delete'
-  Persona.cpp
   Source.cpp
   User.cpp
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\user.cpp(237): warning C4661: 'std::ostream &User<Persona>::operator <<(std::ostream &)': no se ha proporcionado una definición adecuada para la solicitud de creación de instancias de plantillas explícitas
-  d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\user.h(56): note: vea la declaración de 'User<Persona>::operator <<'
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\user.cpp(5): warning C4661: 'std::ostream &User<Persona>::operator <<(std::ostream &)': no se ha proporcionado una definición adecuada para la solicitud de creación de instancias de plantillas explícitas
-  d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\user.h(56): note: vea la declaración de 'User<Persona>::operator <<'
   Generando código...
 d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\user.cpp(139): warning C4715: 'User<Persona>::serch': no todas las rutas de acceso de control devuelven un valor
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\persona.cpp(46): warning C4715: 'Persona::operator>': no todas las rutas de acceso de control devuelven un valor
   Arboles.vcxproj -> D:\Escuela\Segundo cuatri\Progra\REPO\Programacion_2_2019b_Jesus_Alberto_DelMoral_Cupil\Parcial 3\Practicas\Arboles\Debug\Arboles.exe
