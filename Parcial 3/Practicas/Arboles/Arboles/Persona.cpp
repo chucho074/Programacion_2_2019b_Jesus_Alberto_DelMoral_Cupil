@@ -1,26 +1,27 @@
 #include "Persona.h"
 
 
+	//Constructores
 
+//Default
 Persona::Persona() {
-	//cin >> nombre;
-	//cin >> apellido;
-	//cin >> edad;
+	
 }
-
+//Con parametros para crear una persona
 Persona::Persona(std::string ape, std::string nom, unsInt eda) {
 	apellido = ape;
 	nombre = nom;
 	edad = eda;
 }
 
-
+//Destructor
 Persona::~Persona() {
 
 }
 
+	//Operadores
 
-
+//Mayor que (Por nodos)
 bool Persona::operator > (Persona & P) {
 	if (apellido != P.apellido) {
 		if (P.apellido < apellido) {
@@ -45,6 +46,12 @@ bool Persona::operator > (Persona & P) {
 	}
 }
 
+//Menor que (Por nodos)
+bool Persona::operator < (Persona & Per) {
+	return apellido < Per.apellido;
+}
+
+//Igual que (Por nodos)
 bool Persona::operator == (Persona & P) {
 	if (apellido == P.apellido && nombre == P.nombre && edad == P.edad) {
 		return true;
@@ -54,24 +61,22 @@ bool Persona::operator == (Persona & P) {
 	}
 }
 
-bool Persona::operator == (std::string ap) {
-	return apellido == ap;
-}
-
-bool Persona::operator < (std::string s) {
-	return apellido < s;
-}
-
+//Mayor que (Solo por apellido)
 bool Persona::operator > (std::string s) {
 	return apellido > s;
 }
 
-bool Persona::operator<(Persona & Per)
-{
-	return apellido < Per.apellido;
+//Igual que (Solo por apellido)
+bool Persona::operator == (std::string ap) {
+	return apellido == ap;
 }
 
+//Menor que (Solo por apellido)
+bool Persona::operator < (std::string s) {
+	return apellido < s;
+}
 
+//Imprimir datos de nodo
 std::ostream & operator << (std::ostream & os, Persona & P) {
 	os << "\t" << P.apellido << "\n\t" << P.nombre << "\n\t" << P.edad << std::endl;
 	return os;

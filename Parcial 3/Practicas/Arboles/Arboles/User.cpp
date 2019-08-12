@@ -1,9 +1,10 @@
 #include "User.h"
 
-
+//Constructor
 template<class T>
 User<T>::User(T info) {
 	data = info;
+	prev = nullptr;
 	izq = nullptr;
 	der = nullptr;
 }
@@ -11,19 +12,12 @@ User<T>::User(T info) {
 //Constructor
 template<class T>
 User<T>::User() {
+	prev = nullptr;
 	izq = nullptr;
 	der = nullptr;
 }
 
-//
-//template<class T>
-//User<T>::User(string ape, string nom, unsInt eda) {
-//	apellido = ape;
-//	nombre = nom;
-//	edad = eda;
-//}
-
-//Destructor del arbol
+//Destructor del nodo
 template<class T>
 User<T>::~User() {
 	if (izq != nullptr) {
@@ -31,6 +25,9 @@ User<T>::~User() {
 	}
 	if (der != nullptr)	{
 		delete der;
+	}
+	if (prev == nullptr) {
+		delete this;
 	}
 }
 
@@ -163,8 +160,9 @@ void User<T>::erase(User<T> * Node, string delAp, string delNa, int delAge) {
 	delete temp;
 }
 
+//Sobrecarga del operador menor que
 template<class T>
-bool User<T>::operator<(User<T>& a)
+bool User<T>::operator < (User<T>& a)
 {
 	return data < a.data;
 }
@@ -232,6 +230,7 @@ bool User<T>::operator > (User & a) {
 //	out << nombre << " " << apellido << " " << edad << std::endl;
 //	return out;
 //}
+
 
 
 template class User<Persona>;

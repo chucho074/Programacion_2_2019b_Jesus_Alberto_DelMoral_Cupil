@@ -18,17 +18,17 @@ private:
 
 public:
 
-	//Holis
+	//Constructores
 	User();
 	User(T info);
+
+	//Destructor
 	~User();
 
 	T data;
 
-	//User(string apellido, string nombre, unsInt edad);
-	//string apellido;
-	//string nombre;
-	//unsInt edad;
+	//Nodo previo
+	User * prev = nullptr;
 
 	//Nodos siguientes
 	User *izq = nullptr;
@@ -41,13 +41,15 @@ public:
 
 	void postO();
 
-	void add(User<T> *newUser);
+	void add(User<T>*);
 
-	void balUser(User<T> *, unsInt, User<T> *);
+	void balUser(User<T>*, unsInt, User<T>*);
 
-	User<T> serch(User<T> *, string);
+	User<T> serch(User<T>*, string);
 
-	void erase(User<T> *, string, string, int);
+	void erase(User<T>*, string, string, int);
+
+	//Sobrecargas de operadores
 
 	bool operator < (User<T> & a);
 

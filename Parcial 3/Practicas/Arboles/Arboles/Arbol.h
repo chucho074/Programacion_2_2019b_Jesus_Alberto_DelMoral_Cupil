@@ -10,7 +10,6 @@ public:
 	
 	Arbol();
 	Arbol(User<T> * arbol);
-	//Arbol(string Name, string LastName, int Age);
 	~Arbol();
 
 
@@ -20,17 +19,21 @@ public:
 
 	void postO();
 
-	void add(User<T> *&newUser);
+	void add(User<T>*&);
 
-	void balance(User<T> * First);
+	void balance(User<T>*);
 
 	//void erase(User * First);
 
-	//void Delete(string);
+	void Delete(string);
 
-	void rotIzq(User<T> * a);
+	void rotIzq(User<T>*);
 
-	void rotDer(User<T> * a);
+	void rotDer(User<T>*);
+
+	void doblRotDer(User<T>*);
+
+	void doblRotIzq(User<T>*);
 
 
 };
