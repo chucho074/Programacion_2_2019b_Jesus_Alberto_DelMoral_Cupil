@@ -1,8 +1,8 @@
 ﻿  Arbol.cpp
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\arbol.cpp(101): error C2676: '>' binario: 'std::string' no define este operador o una conversión a un tipo aceptable para el operador predefinido
-  d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\arbol.cpp(93): note: durante la compilación de la función miembro de plantilla clase de 'void Arbol<Persona>::Delete(std::string)'
-  d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\arbol.cpp(240): note: vea la referencia a la creación de instancias de plantilla clase de 'Arbol<Persona>' que se está compilando
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\arbol.cpp(113): error C2678: '==' binario: no se encontró un operador que adopte un operando en la parte izquierda de tipo 'std::string' (o bien no existe una conversión aceptable)
+i:\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\arbol.cpp(95): error C2676: '>' binario: 'std::string' no define este operador o una conversión a un tipo aceptable para el operador predefinido
+  i:\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\arbol.cpp(87): note: durante la compilación de la función miembro de plantilla clase de 'void Arbol<Persona>::Delete(std::string)'
+  i:\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\arbol.cpp(254): note: vea la referencia a la creación de instancias de plantilla clase de 'Arbol<Persona>' que se está compilando
+i:\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\arbol.cpp(107): error C2678: '==' binario: no se encontró un operador que adopte un operando en la parte izquierda de tipo 'std::string' (o bien no existe una conversión aceptable)
   c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\exception(321): note: puede ser 'bool std::operator ==(const std::exception_ptr &,const std::exception_ptr &) noexcept' [se encontró con la búsqueda dependiente de argumentos]
   c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\exception(326): note: o       'bool std::operator ==(std::nullptr_t,const std::exception_ptr &) noexcept' [se encontró con la búsqueda dependiente de argumentos]
   c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\exception(331): note: o       'bool std::operator ==(const std::exception_ptr &,std::nullptr_t) noexcept' [se encontró con la búsqueda dependiente de argumentos]
@@ -10,8 +10,11 @@ d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmora
   c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\system_error(272): note: o       'bool std::operator ==(const std::error_code &,const std::error_condition &) noexcept' [se encontró con la búsqueda dependiente de argumentos]
   c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\system_error(278): note: o       'bool std::operator ==(const std::error_condition &,const std::error_code &) noexcept' [se encontró con la búsqueda dependiente de argumentos]
   c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\system_error(284): note: o       'bool std::operator ==(const std::error_condition &,const std::error_condition &) noexcept' [se encontró con la búsqueda dependiente de argumentos]
-  d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\arbol.cpp(113): note: al hacer coincidir la lista de argumentos '(std::string, T)'
+  i:\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\arbol.cpp(107): note: al hacer coincidir la lista de argumentos '(std::string, T)'
           with
           [
               T=Persona
           ]
+  AVL.cpp
+  Source.cpp
+  Generando código...
