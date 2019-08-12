@@ -45,9 +45,9 @@ public:
 
 	void balUser(User<T>*, unsInt, User<T>*);
 
-	User<T> serch(User<T>*, string);
+	User<T> serch(User<T>*, T);
 
-	void erase(User<T>*, string, string, int);
+	void erase(T delData);
 
 	//Sobrecargas de operadores
 

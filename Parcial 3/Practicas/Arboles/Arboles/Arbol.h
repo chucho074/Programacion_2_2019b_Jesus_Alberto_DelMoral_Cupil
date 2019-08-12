@@ -1,40 +1,20 @@
 #pragma once
-#include "User.h"
 
-template <class T>
-class Arbol : public User<T> {
-private:
-	unsigned int cont = 0;
+class Arbol {
 public:
-	User<T> * arbolito;
-	
-	Arbol();
-	Arbol(User<T> * arbol);
-	~Arbol();
 
+	Arbol() {};
 
-	void preO();
+	virtual ~Arbol() = 0;
 
-	void inO();
+	virtual void preO() {};
 
-	void postO();
+	virtual void inO() {};
 
-	void add(User<T>*&);
+	virtual void postO() {};
 
-	void balance(User<T>*);
+	virtual void add() {};
 
-	//void erase(User * First);
-
-	void Delete(string);
-
-	void rotIzq(User<T>*);
-
-	void rotDer(User<T>*);
-
-	void doblRotDer(User<T>*);
-
-	void doblRotIzq(User<T>*);
-
-
+	virtual void Delete() {};
 };
 

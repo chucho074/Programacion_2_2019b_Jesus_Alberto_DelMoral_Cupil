@@ -66,17 +66,17 @@ bool Persona::operator > (std::string s) {
 	return apellido > s;
 }
 
-//Igual que (Solo por apellido)
-bool Persona::operator == (std::string ap) {
-	return apellido == ap;
-}
-
 //Menor que (Solo por apellido)
 bool Persona::operator < (std::string s) {
 	return apellido < s;
 }
 
-//Imprimir datos de nodo
+//Igual que (Solo por apellido)
+bool Persona::operator == (std::string ap) {
+	return apellido == ap;
+}
+
+//Imprimir datos del tipo de dato
 std::ostream & operator << (std::ostream & os, Persona & P) {
 	os << "\t" << P.apellido << "\n\t" << P.nombre << "\n\t" << P.edad << std::endl;
 	return os;

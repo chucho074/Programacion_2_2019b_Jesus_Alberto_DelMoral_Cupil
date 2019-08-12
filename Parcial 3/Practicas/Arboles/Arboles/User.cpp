@@ -115,7 +115,7 @@ void User<T>::balUser(User<T> * Node, unsInt cont, User<T> * temp) {
 
 //Busqueda en un valor
 template<class T>
-User<T> User<T>::serch(User * Node, string value) {
+User<T> User<T>::serch(User * Node, T value) {
 
 	//Si no es igual al primero
 	if (!(Node->data == value)) {
@@ -137,26 +137,32 @@ User<T> User<T>::serch(User * Node, string value) {
 
 //Borrado de un nodo
 template<class T>
-void User<T>::erase(User<T> * Node, string delAp, string delNa, int delAge) {
+void User<T>::erase(T delData) {
 	
-	User * temp = nullptr;	//Nodo con el valor buscado
-	//Busca al nodo
-	if ((der != nullptr) && (izq != nullptr)) {
-		if (!(data == delAp)) {	//Si no es en el que estamos
-			if (data < delAp) {	//Revisar el de la izquierda en caso de ser menor
-				if (izq->data == delAp) {	//Revisa que el apellido de el nodo de la izq. sea igual al recibido
-					temp = izq;	//Lo guarda en el temporal
-				}
-				
-			}
-			else if (data > delAp) {	//Revisa el de la derecha en caso de ser mayor
+	User * temp = serch(this, delData);	//Nodo con el valor buscado
 
-			}
-		}
+	if () {
+
 	}
-	else {
-		delete Node;
-	}
+
+	//User * temp = nullptr;		//Nodo con el valor buscado
+	////Busca al nodo
+	//if ((der != nullptr) && (izq != nullptr)) {
+	//	if (!(data == delData)) {	//Si no es en el que estamos
+	//		if (data < delData) {	//Revisar el de la izquierda en caso de ser menor
+	//			if (izq->data == delData) {	//Revisa que el apellido de el nodo de la izq. sea igual al recibido
+	//				temp = izq;	//Lo guarda en el temporal
+	//			}
+	//			
+	//		}
+	//		else if (data > delData) {	//Revisa el de la derecha en caso de ser mayor
+	//
+	//		}
+	//	}
+	//}
+	//else {
+	//	delete this;
+	//}
 	delete temp;
 }
 

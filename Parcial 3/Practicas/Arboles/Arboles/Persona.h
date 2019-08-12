@@ -2,26 +2,27 @@
 #include <string>
 #include <iostream>
 
+using std::string;
 using std::cin;
-typedef unsigned int unsInt;
+typedef unsigned int unsInt;	//Definicion para uso del tipo de dato unsInt
 
 class Persona {
 public:
-	Persona();
-	Persona(std::string apellido, std::string nombre, unsInt edad);
-	~Persona();
+	Persona();	//Constructor default
+	Persona(string apellido, string nombre, unsInt edad);	//Constructor con parametros
+	~Persona();	//Destructor
 
-	std::string apellido;
-	std::string nombre;
+	string apellido;
+	string nombre;
 	unsInt edad;
 	
-	//Los operadores 
-	bool operator > (Persona &);
-	bool operator == (Persona & Persona);
-	bool operator == (std::string s);
-	bool operator < (std::string s);
-	bool operator > (std::string s);
-	bool operator < (Persona & Per);
-	friend std::ostream & operator << (std::ostream & os, Persona & P);
+	//Operadores Sobrecargados
+	bool operator > (Persona &);	//Mayor que (Por nodos)
+	bool operator < (Persona &);	//Menor que (Por nodos)
+	bool operator == (Persona &);	//Igual que (Por nodos)
+	bool operator > (string);		//Mayor que (Solo por apellido)
+	bool operator < (string);		//Menor que (Solo por apellido)
+	bool operator == (string);		//Igual que (Solo por apellido)
+	friend std::ostream & operator << (std::ostream & os, Persona & P);	//Imprimir datos del tipo de dato
 };
 
