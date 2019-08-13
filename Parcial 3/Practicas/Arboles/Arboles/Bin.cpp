@@ -7,7 +7,7 @@ Bin<T>::Bin() {
 }
 
 template<class T>
-Bin<T>::Bin(User<T>* arbol) {
+Bin<T>::Bin(BinNode<T>* arbol) {
 	arbolito = arbol;
 }
 
@@ -50,7 +50,7 @@ void Bin<T>::postO() {
 
 //Añadir usuario nuevo como arbol
 template<class T>
-void Bin<T>::add(User<T> *&newUser) {
+void Bin<T>::add(BinNode<T> *&newUser) {
 	if (arbolito != nullptr) {
 		arbolito->add(newUser);
 	}
