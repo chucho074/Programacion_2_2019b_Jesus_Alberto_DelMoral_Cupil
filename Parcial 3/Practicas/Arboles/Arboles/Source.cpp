@@ -1,29 +1,29 @@
 #include <iostream>
-#include "User.h"
-#include "Arbol.h"
+#include "AVLNode.h"
+#include "Bin.h"
 
 int main() {
-	Arbol<Persona> * arbolito = new Arbol<Persona>();
-	User<Persona> * a = new User<Persona>(Persona("J", "P", 5));
+	Bin<Persona> * arbolito = new Bin<Persona>();
+	AVLNode<Persona> * a = new AVLNode<Persona>(Persona("J", "P", 5));
 	arbolito->add(a);
-	a = new User<Persona>(Persona("J", "P", 3));
+	a = new AVLNode<Persona>(Persona("J", "P", 3));
 	arbolito->add(a);
-	a = new User<Persona>(Persona("J", "P", 7));
+	a = new AVLNode<Persona>(Persona("J", "P", 7));
 	arbolito->add(a);
-	a = new User<Persona>(Persona("J", "P", 2));
+	a = new AVLNode<Persona>(Persona("J", "P", 2));
 	arbolito->add(a);
-	a = new User<Persona>(Persona("J", "P", 4));
+	a = new AVLNode<Persona>(Persona("J", "P", 4));
 	arbolito->add(a);
 
 
 
-	//User *b = new User("Leo", "Suarez", 5);
+	//AVLNode *b = new AVLNode("Leo", "Suarez", 5);
 	//arbolito.add(b);
-	//User *c = new User("Majo", "Tapia",4);
+	//AVLNode *c = new AVLNode("Majo", "Tapia",4);
 	//arbolito.add(c);
-	//User *d = new User("Papo", "Tapia", 3);
+	//AVLNode *d = new AVLNode("Papo", "Tapia", 3);
 	//arbolito.add(d);
-	//User *f = new User("Pablo", "Perez", 19);
+	//AVLNode *f = new AVLNode("Pablo", "Perez", 19);
 	//arbolito.add(f);
 
 
@@ -52,7 +52,7 @@ int main() {
 				break;
 			}
 			case 'a': {
-			//	User<Persona> *ser = new User<Persona>(arbolito->serch(arbolito, 5));
+			//	AVLNode<Persona> *ser = new AVLNode<Persona>(arbolito->serch(arbolito, 5));
 			//	arbolito->rotDer(ser);
 				break;
 			}

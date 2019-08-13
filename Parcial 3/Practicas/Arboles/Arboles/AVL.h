@@ -1,17 +1,17 @@
 #pragma once
-#include "User.h"
+#include "AVLNode.h"
 #include "Arbol.h"
 
 template <class T>
-class AVL : public Arbol{
+class AVL : public Arbol<T> {
 private:
 	unsigned int cont = 0;
 
 public:
-	User<T> * avlTREE;
+	AVLNode<T> * avlTREE;
 
 	AVL();
-	AVL(User<T> * arbol);
+	AVL(AVLNode<T> * arbol);
 	~AVL();
 
 
@@ -21,19 +21,19 @@ public:
 
 	void postO();			//PostOrden Arbol
 
-	void add(User<T>*&);	//Añadir usuario nuevo como arbol
+	void add(AVLNode<T>*&);	//Añadir usuario nuevo como arbol
 
-	void bal(User<T>*);		//Balancear el arbol
+	void bal(AVLNode<T>*);		//Balancear el arbol
 
-	void Delete(string);	//Borrado desde el arbol
+	//void Delete(string);	//Borrado desde el arbol
 
-	void rotIzq(User<T>*);
+	void rotIzq(AVLNode<T>*);
 
-	void rotDer(User<T>*);
+	void rotDer(AVLNode<T>*);
 
-	void doblRotDer(User<T>*);
+	void doblRotDer(AVLNode<T>*);
 
-	void doblRotIzq(User<T>*);
+	void doblRotIzq(AVLNode<T>*);
 
 
 };

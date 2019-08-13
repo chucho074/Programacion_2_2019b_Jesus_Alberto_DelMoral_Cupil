@@ -1,9 +1,9 @@
 #pragma once
-#include "User.h"
+#include "AVLNode.h"
 #include "Arbol.h"
 
 template <class T>
-class Bin : public Arbol {
+class Bin : public Arbol<T> {
 
 private:
 	unsigned int cont = 0;

@@ -115,19 +115,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Arbol.cpp" />
     <ClCompile Include="Bin.cpp" />
     <ClCompile Include="AVL.cpp" />
     <ClCompile Include="Persona.cpp" />
     <ClCompile Include="Source.cpp" />
-    <ClCompile Include="User.cpp" />
+    <ClCompile Include="AVLNode.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Arbol.h" />
     <ClInclude Include="Bin.h" />
     <ClInclude Include="AVL.h" />
+    <ClInclude Include="Nodes.h" />
     <ClInclude Include="Persona.h" />
-    <ClInclude Include="User.h" />
+    <ClInclude Include="AVLNode.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

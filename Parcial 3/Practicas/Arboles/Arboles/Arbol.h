@@ -1,20 +1,23 @@
 #pragma once
 
+template <class T>
 class Arbol {
 public:
 
 	Arbol() {};
 
-	virtual ~Arbol() = 0;
+	~Arbol() {};
 
-	virtual void preO() {};
+	void virtual preO() = 0;
 
-	virtual void inO() {};
+	void virtual inO() = 0;
 
-	virtual void postO() {};
+	void virtual postO() = 0;
 
-	virtual void add() {};
+	void virtual add(Nodes<T>*&) = 0;
 
-	virtual void Delete() {};
+	void virtual Delete(string) = 0;
+
+	
 };
 

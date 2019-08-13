@@ -7,6 +7,7 @@
 Persona::Persona() {
 	
 }
+
 //Con parametros para crear una persona
 Persona::Persona(std::string ape, std::string nom, unsInt eda) {
 	apellido = ape;

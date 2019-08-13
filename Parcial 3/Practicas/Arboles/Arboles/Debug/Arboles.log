@@ -1,20 +1,70 @@
-﻿  Arbol.cpp
-i:\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\arbol.cpp(95): error C2676: '>' binario: 'std::string' no define este operador o una conversión a un tipo aceptable para el operador predefinido
-  i:\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\arbol.cpp(87): note: durante la compilación de la función miembro de plantilla clase de 'void Arbol<Persona>::Delete(std::string)'
-  i:\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\arbol.cpp(254): note: vea la referencia a la creación de instancias de plantilla clase de 'Arbol<Persona>' que se está compilando
-i:\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\arbol.cpp(107): error C2678: '==' binario: no se encontró un operador que adopte un operando en la parte izquierda de tipo 'std::string' (o bien no existe una conversión aceptable)
-  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\exception(321): note: puede ser 'bool std::operator ==(const std::exception_ptr &,const std::exception_ptr &) noexcept' [se encontró con la búsqueda dependiente de argumentos]
-  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\exception(326): note: o       'bool std::operator ==(std::nullptr_t,const std::exception_ptr &) noexcept' [se encontró con la búsqueda dependiente de argumentos]
-  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\exception(331): note: o       'bool std::operator ==(const std::exception_ptr &,std::nullptr_t) noexcept' [se encontró con la búsqueda dependiente de argumentos]
-  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\system_error(266): note: o       'bool std::operator ==(const std::error_code &,const std::error_code &) noexcept' [se encontró con la búsqueda dependiente de argumentos]
-  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\system_error(272): note: o       'bool std::operator ==(const std::error_code &,const std::error_condition &) noexcept' [se encontró con la búsqueda dependiente de argumentos]
-  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\system_error(278): note: o       'bool std::operator ==(const std::error_condition &,const std::error_code &) noexcept' [se encontró con la búsqueda dependiente de argumentos]
-  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\system_error(284): note: o       'bool std::operator ==(const std::error_condition &,const std::error_condition &) noexcept' [se encontró con la búsqueda dependiente de argumentos]
-  i:\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\arbol.cpp(107): note: al hacer coincidir la lista de argumentos '(std::string, T)'
+﻿  Bin.cpp
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(11): error C2143: error de sintaxis: falta ';' delante de '<'
+  d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(23): note: vea la referencia a la creación de instancias de plantilla clase de 'Bin<T>' que se está compilando
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(11): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(11): error C2238: símbolos (token) inesperados delante de ';'
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(14): error C2061: error de sintaxis: identificador 'User'
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(14): error C2535: 'Bin<T>::Bin(void)': función miembro ya definida o declarada
+  d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(13): note: vea la declaración de 'Bin<T>::Bin'
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(20): error C2061: error de sintaxis: identificador 'User'
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.cpp(6): error C3861: 'arbolito': no se encontró el identificador
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.cpp(10): error C2988: declaración o definición de plantilla irreconocible
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.cpp(10): error C2059: error de sintaxis: '('
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.cpp(10): error C2143: error de sintaxis: falta ';' delante de '{'
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.cpp(10): error C2447: '{': falta el encabezado de función (¿lista formal de estilo anterior?)
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.cpp(17): error C3861: 'arbolito': no se encontró el identificador
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.cpp(18): error C3861: 'arbolito': no se encontró el identificador
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.cpp(28): error C3861: 'arbolito': no se encontró el identificador
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.cpp(29): error C3861: 'arbolito': no se encontró el identificador
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.cpp(36): error C3861: 'arbolito': no se encontró el identificador
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.cpp(37): error C3861: 'arbolito': no se encontró el identificador
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.cpp(46): error C3861: 'arbolito': no se encontró el identificador
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.cpp(47): error C3861: 'arbolito': no se encontró el identificador
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.cpp(53): error C2065: 'User': identificador no declarado
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.cpp(53): error C2065: 'newUser': identificador no declarado
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.cpp(53): error C2182: 'add': uso no válido del tipo 'void'
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.cpp(53): error C2470: 'Bin<T>::add': parece una definición de función, pero no hay ninguna lista de parámetros; se pasará por alto el cuerpo aparente
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.cpp(53): error C2072: 'Bin<T>::add': inicialización de una función
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.cpp(53): error C2447: '{': falta el encabezado de función (¿lista formal de estilo anterior?)
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(14): error C2535: 'Bin<Persona>::Bin(void)': función miembro ya definida o declarada
+  d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(13): note: vea la declaración de 'Bin<Persona>::Bin'
+  AVL.cpp
+  Source.cpp
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(11): error C2143: error de sintaxis: falta ';' delante de '<'
+  d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(23): note: vea la referencia a la creación de instancias de plantilla clase de 'Bin<T>' que se está compilando
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(11): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(11): error C2238: símbolos (token) inesperados delante de ';'
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(14): error C2061: error de sintaxis: identificador 'User'
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(14): error C2535: 'Bin<T>::Bin(void)': función miembro ya definida o declarada
+  d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(13): note: vea la declaración de 'Bin<T>::Bin'
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(20): error C2061: error de sintaxis: identificador 'User'
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(14): error C2535: 'Bin<Persona>::Bin(void)': función miembro ya definida o declarada
+  d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(13): note: vea la declaración de 'Bin<Persona>::Bin'
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\source.cpp(6): error C2259: 'Bin<Persona>': no se puede crear una instancia de una clase abstract
+  d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\source.cpp(6): note: debido a los siguientes miembros:
+  d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\source.cpp(6): note: 'void Arbol<T>::add(Nodes<T> *&)': es abstracto
           with
           [
               T=Persona
           ]
-  AVL.cpp
-  Source.cpp
+  d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\arbol.h(17): note: vea la declaración de 'Arbol<T>::add'
+          with
+          [
+              T=Persona
+          ]
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\source.cpp(8): error C2660: 'Bin<Persona>::add': la función no acepta 1 argumentos
+  d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(20): note: vea la declaración de 'Bin<Persona>::add'
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\source.cpp(10): error C2660: 'Bin<Persona>::add': la función no acepta 1 argumentos
+  d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(20): note: vea la declaración de 'Bin<Persona>::add'
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\source.cpp(12): error C2660: 'Bin<Persona>::add': la función no acepta 1 argumentos
+  d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(20): note: vea la declaración de 'Bin<Persona>::add'
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\source.cpp(14): error C2660: 'Bin<Persona>::add': la función no acepta 1 argumentos
+  d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(20): note: vea la declaración de 'Bin<Persona>::add'
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\source.cpp(16): error C2660: 'Bin<Persona>::add': la función no acepta 1 argumentos
+  d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(20): note: vea la declaración de 'Bin<Persona>::add'
+  AVLNode.cpp
   Generando código...
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\avlnode.cpp(137): warning C4715: 'AVLNode<Persona>::serch': no todas las rutas de acceso de control devuelven un valor
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\nodes.h(17): error C4716: 'Nodes<Persona>::serch': debe devolver un valor
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\nodes.h(23): error C4716: 'Nodes<Persona>::operator<': debe devolver un valor
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\nodes.h(25): error C4716: 'Nodes<Persona>::operator>': debe devolver un valor
