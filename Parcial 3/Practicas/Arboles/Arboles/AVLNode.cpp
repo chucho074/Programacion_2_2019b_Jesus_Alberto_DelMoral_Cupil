@@ -137,36 +137,54 @@ AVLNode<T> AVLNode<T>::serch(AVLNode * Node, T value) {
 }
 
 //Borrado de un nodo
-//template<class T>
-//void AVLNode<T>::erase(T delData) {
-//	
-//	AVLNode * temp = serch(this, delData);	//Nodo con el valor buscado
-//	
-//	if () {
-//	
-//	}
-//
-//	//AVLNode * temp = nullptr;		//Nodo con el valor buscado
-//	////Busca al nodo
-//	//if ((der != nullptr) && (izq != nullptr)) {
-//	//	if (!(data == delData)) {	//Si no es en el que estamos
-//	//		if (data < delData) {	//Revisar el de la izquierda en caso de ser menor
-//	//			if (izq->data == delData) {	//Revisa que el apellido de el nodo de la izq. sea igual al recibido
-//	//				temp = izq;	//Lo guarda en el temporal
-//	//			}
-//	//			
-//	//		}
-//	//		else if (data > delData) {	//Revisa el de la derecha en caso de ser mayor
-//	//
-//	//		}
-//	//	}
-//	//}
-//	//else {
-//	//	delete this;
-//	//}
-//	delete temp;
-//}
+template<class T>
+void AVLNode<T>::erase(T delData) {
 
+	AVLNode * temp = serch(this, delData);    //Nodo con el valor buscado
+	AVLNode * temp2 = nullptr;
+	AVLNode * temp3 = nullptr;
+
+	if (temp->prev->izq == temp) {
+		//Toma el nodo que está mas a la derecha
+		temp2 = lastNodeDer(temp);
+		temp2->prev->der = nullptr;
+		temp2->prev = temp->prev;
+		temp2->izq = temp->der>;
+		if (temp->der->izq != nullptr) {
+			temp3 = lastNodeIzq(temp->der);
+			temp3->izq = temp->izq
+		}
+		else {
+			temp->der = temp->izq;
+		}
+
+		temp->izq = nullptr;
+		temp->der = nullptr;
+		delete temp;
+	}
+
+	else if (temp->prev->der == temp) {
+		//Toma el nodo que está más a la izquierda
+		temp2 = lastNodeIzq(temp);
+		temp2->prev = nullptr;
+		temp2->prev = temp->prev;
+		temp2->der = temp->izq;
+		if (temp->izq->der != nullptr) {
+			temp3 = lastNodeDer(temp->izq);
+			temp3->der = temp->der
+		}
+		else {
+			temp->izq = temp->der;
+		}
+
+		temp->izq = nullptr;
+		temp->der = nullptr;
+		delete temp;
+	}
+
+
+	delete temp;
+}
 //Sobrecarga del operador menor que
 template<class T>
 bool AVLNode<T>::operator < (AVLNode<T>& a)

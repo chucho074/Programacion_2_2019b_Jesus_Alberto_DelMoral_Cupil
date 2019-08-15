@@ -255,3 +255,4 @@ void AVL<T>::doblRotIzq(AVLNode<T> * a) {
 
 
 template class AVL<Persona>;
+template class Arbol<Persona>;

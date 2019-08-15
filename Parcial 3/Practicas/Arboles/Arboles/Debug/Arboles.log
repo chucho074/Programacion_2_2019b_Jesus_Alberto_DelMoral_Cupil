@@ -1,45 +1,4 @@
-﻿  Bin.cpp
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(11): error C2143: error de sintaxis: falta ';' delante de '<'
-  d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(23): note: vea la referencia a la creación de instancias de plantilla clase de 'Bin<T>' que se está compilando
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(11): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(11): error C2238: símbolos (token) inesperados delante de ';'
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(14): error C2061: error de sintaxis: identificador 'User'
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(14): error C2535: 'Bin<T>::Bin(void)': función miembro ya definida o declarada
-  d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(13): note: vea la declaración de 'Bin<T>::Bin'
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(20): error C2061: error de sintaxis: identificador 'User'
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.cpp(6): error C3861: 'arbolito': no se encontró el identificador
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.cpp(10): error C2988: declaración o definición de plantilla irreconocible
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.cpp(10): error C2059: error de sintaxis: '('
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.cpp(10): error C2143: error de sintaxis: falta ';' delante de '{'
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.cpp(10): error C2447: '{': falta el encabezado de función (¿lista formal de estilo anterior?)
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.cpp(17): error C3861: 'arbolito': no se encontró el identificador
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.cpp(18): error C3861: 'arbolito': no se encontró el identificador
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.cpp(28): error C3861: 'arbolito': no se encontró el identificador
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.cpp(29): error C3861: 'arbolito': no se encontró el identificador
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.cpp(36): error C3861: 'arbolito': no se encontró el identificador
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.cpp(37): error C3861: 'arbolito': no se encontró el identificador
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.cpp(46): error C3861: 'arbolito': no se encontró el identificador
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.cpp(47): error C3861: 'arbolito': no se encontró el identificador
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.cpp(53): error C2065: 'User': identificador no declarado
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.cpp(53): error C2065: 'newUser': identificador no declarado
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.cpp(53): error C2182: 'add': uso no válido del tipo 'void'
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.cpp(53): error C2470: 'Bin<T>::add': parece una definición de función, pero no hay ninguna lista de parámetros; se pasará por alto el cuerpo aparente
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.cpp(53): error C2072: 'Bin<T>::add': inicialización de una función
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.cpp(53): error C2447: '{': falta el encabezado de función (¿lista formal de estilo anterior?)
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(14): error C2535: 'Bin<Persona>::Bin(void)': función miembro ya definida o declarada
-  d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(13): note: vea la declaración de 'Bin<Persona>::Bin'
-  AVL.cpp
-  Source.cpp
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(11): error C2143: error de sintaxis: falta ';' delante de '<'
-  d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(23): note: vea la referencia a la creación de instancias de plantilla clase de 'Bin<T>' que se está compilando
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(11): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(11): error C2238: símbolos (token) inesperados delante de ';'
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(14): error C2061: error de sintaxis: identificador 'User'
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(14): error C2535: 'Bin<T>::Bin(void)': función miembro ya definida o declarada
-  d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(13): note: vea la declaración de 'Bin<T>::Bin'
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(20): error C2061: error de sintaxis: identificador 'User'
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(14): error C2535: 'Bin<Persona>::Bin(void)': función miembro ya definida o declarada
-  d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(13): note: vea la declaración de 'Bin<Persona>::Bin'
+﻿  Source.cpp
 d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\source.cpp(6): error C2259: 'Bin<Persona>': no se puede crear una instancia de una clase abstract
   d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\source.cpp(6): note: debido a los siguientes miembros:
   d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\source.cpp(6): note: 'void Arbol<T>::add(Nodes<T> *&)': es abstracto
@@ -47,24 +6,36 @@ d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmora
           [
               T=Persona
           ]
-  d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\arbol.h(17): note: vea la declaración de 'Arbol<T>::add'
+  d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\arbol.h(19): note: vea la declaración de 'Arbol<T>::add'
           with
           [
               T=Persona
           ]
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\source.cpp(8): error C2660: 'Bin<Persona>::add': la función no acepta 1 argumentos
-  d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(20): note: vea la declaración de 'Bin<Persona>::add'
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\source.cpp(10): error C2660: 'Bin<Persona>::add': la función no acepta 1 argumentos
-  d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(20): note: vea la declaración de 'Bin<Persona>::add'
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\source.cpp(12): error C2660: 'Bin<Persona>::add': la función no acepta 1 argumentos
-  d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(20): note: vea la declaración de 'Bin<Persona>::add'
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\source.cpp(14): error C2660: 'Bin<Persona>::add': la función no acepta 1 argumentos
-  d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(20): note: vea la declaración de 'Bin<Persona>::add'
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\source.cpp(16): error C2660: 'Bin<Persona>::add': la función no acepta 1 argumentos
-  d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\bin.h(20): note: vea la declaración de 'Bin<Persona>::add'
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\source.cpp(8): error C2664: 'void Bin<Persona>::add(BinNode<T> *&)': el argumento 1 no puede convertirse de 'AVLNode<Persona> *' a 'BinNode<T> *&'
+          with
+          [
+              T=Persona
+          ]
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\source.cpp(10): error C2664: 'void Bin<Persona>::add(BinNode<T> *&)': el argumento 1 no puede convertirse de 'AVLNode<Persona> *' a 'BinNode<T> *&'
+          with
+          [
+              T=Persona
+          ]
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\source.cpp(12): error C2664: 'void Bin<Persona>::add(BinNode<T> *&)': el argumento 1 no puede convertirse de 'AVLNode<Persona> *' a 'BinNode<T> *&'
+          with
+          [
+              T=Persona
+          ]
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\source.cpp(14): error C2664: 'void Bin<Persona>::add(BinNode<T> *&)': el argumento 1 no puede convertirse de 'AVLNode<Persona> *' a 'BinNode<T> *&'
+          with
+          [
+              T=Persona
+          ]
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\source.cpp(16): error C2664: 'void Bin<Persona>::add(BinNode<T> *&)': el argumento 1 no puede convertirse de 'AVLNode<Persona> *' a 'BinNode<T> *&'
+          with
+          [
+              T=Persona
+          ]
   AVLNode.cpp
+d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\avlnode.cpp(152): error C2760: error de sintaxis: token ";" donde se esperaba "expresión"
   Generando código...
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\avlnode.cpp(137): warning C4715: 'AVLNode<Persona>::serch': no todas las rutas de acceso de control devuelven un valor
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\nodes.h(17): error C4716: 'Nodes<Persona>::serch': debe devolver un valor
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\nodes.h(23): error C4716: 'Nodes<Persona>::operator<': debe devolver un valor
-d:\escuela\segundo cuatri\progra\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\nodes.h(25): error C4716: 'Nodes<Persona>::operator>': debe devolver un valor

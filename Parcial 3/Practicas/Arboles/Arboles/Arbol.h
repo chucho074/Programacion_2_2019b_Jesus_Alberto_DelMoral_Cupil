@@ -1,4 +1,6 @@
 #pragma once
+#include <string>
+using std::string;
 
 template <class T>
 class Arbol {

@@ -1,4 +1,5 @@
 #include "Bin.h"
+#include "Persona.h"
 
 //Constructor default
 template<class T>
@@ -169,3 +170,4 @@ void Bin<T>::Delete(string delAp) {
 }
 //
 template class Bin<Persona>;
+template class Arbol<Persona>;

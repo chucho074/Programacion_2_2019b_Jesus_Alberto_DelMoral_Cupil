@@ -48,7 +48,7 @@ public:
 
 	AVLNode<T> serch(AVLNode<T>*, T);
 
-	//void erase(T delData);
+	void erase(T delData);
 
 	//Sobrecargas de operadores
 
