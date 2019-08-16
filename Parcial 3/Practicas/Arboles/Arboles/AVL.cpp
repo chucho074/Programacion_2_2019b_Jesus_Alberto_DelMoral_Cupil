@@ -70,10 +70,8 @@ void AVL<T>::add(AVLNode<T> *&newAVLNode) {
 	if (avlTREE != nullptr) {
 		avlTREE->add(newAVLNode);
 		bal(avlTREE);
-		//if (avlTREE->) {
-		//
-		//}
 	}
+	
 	else {
 		avlTREE = newAVLNode;
 	}

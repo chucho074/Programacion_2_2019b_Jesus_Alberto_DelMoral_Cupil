@@ -111,15 +111,34 @@ void AVLNode<T>::balAVLNode(AVLNode<T> * Node, unsInt cont) {
 			balIzq = izq->pesoAct;
 			pesoAct = ((Nivel * balDer) + (Nivel * balIzq));
 			prev->balIzq = pesoAct;
-			BF = ((izq->Nivel) - (der->Nivel));
+			//Sacar el BF
+			if (der != nullptr && izq != nullptr) {
+				BF = ((izq->Nivel) - (der->Nivel));
+			}
+			else if (der != nullptr) {
+				BF = der->Nivel;
+			}
+			else {
+				BF = izq->Nivel;
+			}
 		}
 		if (der != nullptr) {
 			cont++;
 			der->balAVLNode(Node->der, cont);
 			balDer = der->pesoAct;
-			pesoAct = ((Nivel * balDer) + (Nivel * balIzq));
+			pesoAct = ((Nivel * balIzq) + (Nivel * balDer));
 			prev->balDer = pesoAct;
-			BF = ((izq->Nivel) - (der->Nivel));
+			//Sacar el BF
+			if (der != nullptr && izq != nullptr) {
+				BF = ((izq->Nivel) - (der->Nivel));
+			}
+			else if (izq != nullptr) {
+				BF = izq->Nivel;
+			}
+			else {
+				BF = der->Nivel;
+			}
+
 		}
 		else {
 			pesoAct = Nivel + 1;
@@ -132,21 +151,41 @@ void AVLNode<T>::balAVLNode(AVLNode<T> * Node, unsInt cont) {
 			cont++;
 			izq->balAVLNode(Node->izq, cont);
 			balIzq = izq->pesoAct;
-			pesoAct = ((Nivel * balDer) + (Nivel * balIzq));
-			BF = ((izq->Nivel) - (der->Nivel));
-
+			pesoAct = balDer + balIzq;
+			//Sacar el BF
+			if (der != nullptr && izq != nullptr) {
+				BF = ((izq->Nivel) - (der->Nivel));
+			}
+			else if (der != nullptr) {
+				BF = der->Nivel;
+			}
+			else {
+				BF = izq->Nivel;
+			}
 			
 		}
 		if (der != nullptr) {
 			cont++;
 			der->balAVLNode(Node->der, cont);
-			pesoAct = ((Nivel * balDer) + (Nivel * balIzq));
-			BF = ((izq->Nivel) - (der->Nivel));
+			pesoAct = balIzq + balDer;
+			//Sacar el BF
+			if (der != nullptr && izq != nullptr) {
+				BF = ((izq->Nivel) - (der->Nivel));
+			}
+			else if (izq != nullptr) {
+				BF = izq->Nivel;
+			}
+			else {
+				BF = der->Nivel;
+			}
 			
 		}
 		
 	}
-
+	if (BF == 2) {
+		rotDer(this);
+	}
+	
 }
 
 //Busqueda en un valor
@@ -246,6 +285,27 @@ AVLNode<T> * AVLNode<T>::lastNodeIzq(AVLNode<T> * Node) {
 	else {
 		return Node;
 	}
+
+}
+
+//Funcion de rotacion derecha
+template <class T>
+void AVLNode<T>::rotDer(AVLNode<T> * a) {
+	//Se moverá el nodo derecho del que se convertirá en el padre
+	//Se conectará el antiguo padre al nuevo padre 
+	//Se le conectará el nodo que era derecho del anterior a su izquierda
+
+	//Creamos loss punteros
+	AVLNode<T> * temp = new AVLNode<T>();
+	AVLNode<T> * movNode = new AVLNode<T>();
+
+	//Los igualamos a lo requerido
+	temp = a->der;
+	movNode = temp->der;
+
+	//Swap
+	a->izq = movNode;
+	temp->der = a;
 
 }
 

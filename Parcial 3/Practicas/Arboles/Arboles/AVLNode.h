@@ -43,6 +43,8 @@ public:
 	AVLNode<T> * lastNodeDer(AVLNode<T> *);					//Buscar ultimo nodo a la derecha
 	AVLNode<T> * lastNodeIzq(AVLNode<T> *);					//Buscar ultimo nodo a la izquierda
 
+	void rotDer(AVLNode<T>*);
+
 	//Sobrecargas de operadores
 	bool operator < (AVLNode<T> &);						//Operador menor que
 	bool operator > (AVLNode<T> &);						//Operador mayor que
