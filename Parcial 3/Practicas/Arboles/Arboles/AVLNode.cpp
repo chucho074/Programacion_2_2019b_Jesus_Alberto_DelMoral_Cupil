@@ -81,6 +81,7 @@ void AVLNode<T>::add(AVLNode<T> *newAVLNode) {	//Agregar Balanceo automatico
 	if (*this < *newAVLNode) {
 		if (izq == nullptr) {
 			izq = newAVLNode;
+			newAVLNode->prev = this;
 		}
 		else if (izq != nullptr) {
 			izq->add(newAVLNode);
@@ -89,6 +90,8 @@ void AVLNode<T>::add(AVLNode<T> *newAVLNode) {	//Agregar Balanceo automatico
 	else if (*this > *newAVLNode) {
 		if (der == nullptr) {
 			der = newAVLNode;
+			newAVLNode->prev = this;
+
 		}
 		else if (der != nullptr) {
 			der->add(newAVLNode);
@@ -98,24 +101,44 @@ void AVLNode<T>::add(AVLNode<T> *newAVLNode) {	//Agregar Balanceo automatico
 
 //Revisar si esta balanceado el arbol
 template<class T>
-void AVLNode<T>::balAVLNode(AVLNode<T> * Node, unsInt cont, AVLNode<T> * temp) {
+void AVLNode<T>::balAVLNode(AVLNode<T> * Node, unsInt cont) {
+	if (prev != nullptr) {
 
-	Nivel = cont;
-	if (izq != nullptr) {
-		cont++;
-		izq->balAVLNode(Node->izq, cont, Node);
-		balIzq = izq->pesoAct;
-		pesoAct = ((Nivel * balDer) + (Nivel * balIzq));
-		temp->balIzq = pesoAct;
-	}	
-	if (der != nullptr) {
-		cont++;
-		der->balAVLNode(Node->der, cont, Node);
-		pesoAct = ((Nivel * balDer) + (Nivel * balIzq));
-		temp->balDer = pesoAct;
+		Nivel = cont;
+		if (izq != nullptr) {
+			cont++;
+			izq->balAVLNode(Node->izq, cont);
+			balIzq = izq->pesoAct;
+			pesoAct = ((Nivel * balDer) + (Nivel * balIzq));
+			prev->balIzq = pesoAct;
+		}
+		if (der != nullptr) {
+			cont++;
+			der->balAVLNode(Node->der, cont);
+			pesoAct = ((Nivel * balDer) + (Nivel * balIzq));
+			prev->balDer = pesoAct;
+		}
+		else {
+			prev->pesoAct = prev->Nivel;
+		}
 	}
+	//Sea la raiz
 	else {
-		temp->pesoAct = temp->Nivel;
+		Nivel = cont;
+		if (izq != nullptr) {
+			cont++;
+			izq->balAVLNode(Node->izq, cont);
+			balIzq = izq->pesoAct;
+			pesoAct = ((Nivel * balDer) + (Nivel * balIzq));
+			
+		}
+		if (der != nullptr) {
+			cont++;
+			der->balAVLNode(Node->der, cont);
+			pesoAct = ((Nivel * balDer) + (Nivel * balIzq));
+			
+		}
+		
 	}
 
 }

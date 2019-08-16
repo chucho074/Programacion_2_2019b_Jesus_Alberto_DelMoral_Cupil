@@ -21,10 +21,7 @@ int main() {
 	cin >> z;
 	a = new AVLNode<Persona>(Persona(x, y, z));
 	arbolito->add(a);
-	//a = new BinNode<Persona>(Persona("J", "P", 2));
-	//arbolito->add(a);
-	//a = new BinNode<Persona>(Persona("J", "P", 4));
-	//arbolito->add(a);
+
 
 
 	bool menu = true;

@@ -87,6 +87,7 @@ void BinNode<T>::add(BinNode<T> *newBinNode) {
 	if (*this < *newBinNode) {
 		if (izq == nullptr) {
 			izq = newBinNode;
+			newBinNode->prev = this;
 		}
 		else if (izq != nullptr) {
 			izq->add(newBinNode);
@@ -95,6 +96,7 @@ void BinNode<T>::add(BinNode<T> *newBinNode) {
 	else if (*this > *newBinNode) {
 		if (der == nullptr) {
 			der = newBinNode;
+			newBinNode->prev = this;
 		}
 		else if (der != nullptr) {
 			der->add(newBinNode);

@@ -69,7 +69,10 @@ void AVL<T>::add(AVLNode<T> *&newAVLNode) {
 	
 	if (avlTREE != nullptr) {
 		avlTREE->add(newAVLNode);
-		bal(newAVLNode);
+		bal(avlTREE);
+		//if (avlTREE->) {
+		//
+		//}
 	}
 	else {
 		avlTREE = newAVLNode;
@@ -83,12 +86,12 @@ void AVL<T>::bal(AVLNode<T> * First) {
 
 	if (First->izq != nullptr) {
 		AVLNode<T> * temp = First;
-		cont++;
-		First->balAVLNode(First->izq, cont, nullptr);
+		//cont++;
+		First->balAVLNode(First->izq, cont);
 	}
 	if (First->der != nullptr) {
-		cont++;
-		First->balAVLNode(First->der, cont, nullptr);
+		//cont++;
+		First->balAVLNode(First->der, cont);
 	}
 
 }

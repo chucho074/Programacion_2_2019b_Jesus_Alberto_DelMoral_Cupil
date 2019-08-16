@@ -36,7 +36,7 @@ public:
 	void inO();											//InOrden Arbol
 	void postO();										//PostOrden Arbol
 	void add(AVLNode<T>*);								//Añadir un nodo al arbol
-	void balAVLNode(AVLNode<T>*, unsInt, AVLNode<T>*);	//Revision de balanceo
+	void balAVLNode(AVLNode<T>*, unsInt);	//Revision de balanceo
 	AVLNode<T> * serch(AVLNode<T>*, T);					//Buscar un nodo
 	void erase(T);										//Borrar un nodo
 	AVLNode<T> * lastNodeDer(AVLNode<T> *);					//Buscar ultimo nodo a la derecha
