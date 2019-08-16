@@ -1,4 +1,4 @@
-#include "AVLNode.h"
+ï»¿#include "AVLNode.h"
 
 //Constructor
 template<class T>
@@ -75,7 +75,7 @@ void AVLNode<T>::postO() {
 
 }
 
-//Añadir usuario nuevo
+//AÃ±adir usuario nuevo
 template<class T>
 void AVLNode<T>::add(AVLNode<T> *newAVLNode) {	//Agregar Balanceo automatico
 	if (*this < *newAVLNode) {
@@ -111,15 +111,18 @@ void AVLNode<T>::balAVLNode(AVLNode<T> * Node, unsInt cont) {
 			balIzq = izq->pesoAct;
 			pesoAct = ((Nivel * balDer) + (Nivel * balIzq));
 			prev->balIzq = pesoAct;
+			BF = ((izq->Nivel) - (der->Nivel));
 		}
 		if (der != nullptr) {
 			cont++;
 			der->balAVLNode(Node->der, cont);
+			balDer = der->pesoAct;
 			pesoAct = ((Nivel * balDer) + (Nivel * balIzq));
 			prev->balDer = pesoAct;
+			BF = ((izq->Nivel) - (der->Nivel));
 		}
 		else {
-			prev->pesoAct = prev->Nivel;
+			pesoAct = Nivel + 1;
 		}
 	}
 	//Sea la raiz
@@ -130,12 +133,15 @@ void AVLNode<T>::balAVLNode(AVLNode<T> * Node, unsInt cont) {
 			izq->balAVLNode(Node->izq, cont);
 			balIzq = izq->pesoAct;
 			pesoAct = ((Nivel * balDer) + (Nivel * balIzq));
+			BF = ((izq->Nivel) - (der->Nivel));
+
 			
 		}
 		if (der != nullptr) {
 			cont++;
 			der->balAVLNode(Node->der, cont);
 			pesoAct = ((Nivel * balDer) + (Nivel * balIzq));
+			BF = ((izq->Nivel) - (der->Nivel));
 			
 		}
 		
@@ -174,7 +180,7 @@ void AVLNode<T>::erase(T delData) {
 	AVLNode * temp3 = nullptr;
 
 	if (temp->prev->izq == temp) {
-		//Toma el nodo que está mas a la derecha
+		//Toma el nodo que estÃ¡ mas a la derecha
 		temp2 = lastNodeDer(temp);
 		temp2->prev->der = nullptr;
 		temp2->prev = temp->prev;
@@ -193,7 +199,7 @@ void AVLNode<T>::erase(T delData) {
 	}
 
 	else if (temp->prev->der == temp) {
-		//Toma el nodo que está más a la izquierda
+		//Toma el nodo que estÃ¡ mÃ¡s a la izquierda
 		temp2 = lastNodeIzq(temp);
 		temp2->prev = nullptr;
 		temp2->prev = temp->prev;

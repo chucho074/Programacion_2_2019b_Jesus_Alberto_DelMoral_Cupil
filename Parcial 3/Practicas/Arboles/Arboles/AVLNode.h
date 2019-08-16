@@ -17,6 +17,7 @@ private:
 	unsInt balIzq = 0;
 	unsInt balDer = 0;
 	unsInt pesoAct = 0;
+	int BF = 0;
 
 public:
 	
