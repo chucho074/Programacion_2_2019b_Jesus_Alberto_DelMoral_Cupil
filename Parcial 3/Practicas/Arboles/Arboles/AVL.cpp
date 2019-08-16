@@ -1,6 +1,7 @@
 #include "AVL.h"
+#include "Persona.h"
 
-
+//Constructor default
 template <class T>
 AVL<T>::AVL() {
 
@@ -8,6 +9,7 @@ AVL<T>::AVL() {
 
 }
 
+//Constructor con parametros
 template<class T>
 AVL<T>::AVL(AVLNode<T>* arbol) {
 
@@ -15,6 +17,7 @@ AVL<T>::AVL(AVLNode<T>* arbol) {
 
 }
 
+//Destructor
 template <class T>
 AVL<T>::~AVL() {
 
@@ -25,7 +28,10 @@ AVL<T>::~AVL() {
 }
 
 
+
 		//Funciones
+
+
 
 //PreOrden Arbol
 template<class T>
@@ -63,6 +69,7 @@ void AVL<T>::add(AVLNode<T> *&newAVLNode) {
 	
 	if (avlTREE != nullptr) {
 		avlTREE->add(newAVLNode);
+		bal(newAVLNode);
 	}
 	else {
 		avlTREE = newAVLNode;
@@ -70,7 +77,7 @@ void AVL<T>::add(AVLNode<T> *&newAVLNode) {
 
 }
 
-//
+//Balancear el arbol
 template<class T>
 void AVL<T>::bal(AVLNode<T> * First) {
 
@@ -86,115 +93,6 @@ void AVL<T>::bal(AVLNode<T> * First) {
 
 }
 
-//Borrado 2, que si srive
-//template<class T>
-//void AVL<T>::Delete(string delAp) {
-//
-//	AVLNode<T> * temp1 = nullptr;
-//	AVLNode<T> * temp2 = nullptr;
-//	temp1 = avlTREE;
-//
-//	while (temp1 != nullptr) {
-//
-//		if (delAp > temp1->data) {
-//
-//			if (temp1->der != nullptr) {
-//
-//				temp2 = temp1;
-//				temp1 = temp1->der;
-//
-//			}
-//
-//		}
-//
-//
-//		else if (delAp == temp1->data) {
-//
-//			if (temp1->izq != nullptr && temp1->der == nullptr) {
-//
-//				if (temp2 != nullptr) {
-//
-//					if (temp2->izq == temp1) {
-//
-//						temp2->izq = temp1->izq;
-//
-//					}
-//
-//					else if (temp2->der == temp1) {
-//
-//						temp2->der = temp1->izq;
-//
-//					}
-//
-//					temp1->izq = nullptr;
-//					delete temp1;
-//
-//				}
-//
-//			}
-//
-//			else if (temp1->izq == nullptr && temp1->der == nullptr) {
-//
-//				if (temp2 != nullptr) {
-//
-//					if (temp2->der == temp1) {
-//
-//						temp2->der = nullptr;
-//
-//					}
-//
-//					else if (temp2->izq == temp1) {
-//
-//						temp2->izq = nullptr;
-//
-//					}
-//
-//				}
-//
-//				delete temp1;
-//				break;
-//
-//			}
-//
-//			else if (temp1->izq == nullptr && temp1->der != nullptr) {
-//
-//				if (temp2 != nullptr) {
-//
-//					if (temp2->izq == temp1) {
-//
-//						temp2->izq = temp1->der;
-//
-//					}
-//
-//					else if (temp2->der == temp1) {
-//
-//						temp2->der = temp1->der;
-//
-//					}
-//
-//					temp1->der = nullptr;
-//					delete temp1;
-//
-//				}
-//
-//			}
-//
-//
-//		}
-//
-//		else {
-//
-//			if (temp1->izq != nullptr) {
-//
-//				temp2 = temp1;
-//				temp1 = temp1->izq;
-//
-//			}
-//
-//		}
-//	}
-//}
-//
 //Funcion de rotacion izquierda
 template <class T>
 void AVL<T>::rotIzq(AVLNode<T> * a) {
@@ -234,7 +132,7 @@ void AVL<T>::rotDer(AVLNode<T> * a) {
 
 }
 
-
+//Funcion Doble rotacion derecha
 template <class T>
 void AVL<T>::doblRotDer(AVLNode<T> * a) {
 
@@ -243,7 +141,7 @@ void AVL<T>::doblRotDer(AVLNode<T> * a) {
 
 }
 
-
+//Funcion Doble rotacion izquierda
 template <class T>
 void AVL<T>::doblRotIzq(AVLNode<T> * a) {
 
@@ -254,5 +152,8 @@ void AVL<T>::doblRotIzq(AVLNode<T> * a) {
 
 
 
-template class AVL<Persona>;
-template class Arbol<Persona>;
+template class AVL<Persona>;	//Clase AVL con tipo de dato 'Persona'
+//template class Arbol<Persona>;	//Clase Arbol con tipo de dato 'Persona'
+
+//template class AVL<int>;		//Clase AVL con tipo de dato 'int'
+//template class Arbol<int>;		//Clase Arbol con tipo de dato 'int'

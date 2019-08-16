@@ -2,16 +2,16 @@
 
 //Constructor
 template<class T>
-AVLNode<T>::AVLNode(T info) {
-	data = info;
+AVLNode<T>::AVLNode() {
 	prev = nullptr;
 	izq = nullptr;
 	der = nullptr;
 }
 
-//Constructor
+//Constructor con parametros
 template<class T>
-AVLNode<T>::AVLNode() {
+AVLNode<T>::AVLNode(T info) {
+	data = info;
 	prev = nullptr;
 	izq = nullptr;
 	der = nullptr;
@@ -30,6 +30,12 @@ AVLNode<T>::~AVLNode() {
 		delete this;
 	}
 }
+
+
+
+			//Funciones
+
+
 
 //PreOrden
 template<class T>
@@ -71,7 +77,7 @@ void AVLNode<T>::postO() {
 
 //Añadir usuario nuevo
 template<class T>
-void AVLNode<T>::add(AVLNode<T> *newAVLNode) {
+void AVLNode<T>::add(AVLNode<T> *newAVLNode) {	//Agregar Balanceo automatico
 	if (*this < *newAVLNode) {
 		if (izq == nullptr) {
 			izq = newAVLNode;
@@ -116,7 +122,7 @@ void AVLNode<T>::balAVLNode(AVLNode<T> * Node, unsInt cont, AVLNode<T> * temp) {
 
 //Busqueda en un valor
 template<class T>
-AVLNode<T> AVLNode<T>::serch(AVLNode * Node, T value) {
+AVLNode<T> * AVLNode<T>::serch(AVLNode * Node, T value) {
 
 	//Si no es igual al primero
 	if (!(Node->data == value)) {
@@ -131,7 +137,7 @@ AVLNode<T> AVLNode<T>::serch(AVLNode * Node, T value) {
 	}
 	//Devolvemos el valor de 
 	else {
-		return *Node;
+		return Node;
 	}
 
 }
@@ -149,10 +155,10 @@ void AVLNode<T>::erase(T delData) {
 		temp2 = lastNodeDer(temp);
 		temp2->prev->der = nullptr;
 		temp2->prev = temp->prev;
-		temp2->izq = temp->der>;
+		temp2->izq = temp->der;
 		if (temp->der->izq != nullptr) {
 			temp3 = lastNodeIzq(temp->der);
-			temp3->izq = temp->izq
+			temp3->izq = temp->izq;
 		}
 		else {
 			temp->der = temp->izq;
@@ -171,7 +177,7 @@ void AVLNode<T>::erase(T delData) {
 		temp2->der = temp->izq;
 		if (temp->izq->der != nullptr) {
 			temp3 = lastNodeDer(temp->izq);
-			temp3->der = temp->der
+			temp3->der = temp->der;
 		}
 		else {
 			temp->izq = temp->der;
@@ -185,6 +191,41 @@ void AVLNode<T>::erase(T delData) {
 
 	delete temp;
 }
+
+//Funcion para buscar el mas a la derecha
+template<class T>
+AVLNode<T> * AVLNode<T>::lastNodeDer(AVLNode<T> * Node) {
+
+	if (Node->der != nullptr) {
+		lastNodeDer(Node->der);
+	}
+
+	else {
+		return Node;
+	}
+
+}
+
+//Funcion para buscar el mas a la izquierda
+template<class T>
+AVLNode<T> * AVLNode<T>::lastNodeIzq(AVLNode<T> * Node) {
+
+	if (Node->izq != nullptr) {
+		lastNodeDer(Node->izq);
+	}
+
+	else {
+		return Node;
+	}
+
+}
+
+
+
+			//Sobrecarga de operadores
+
+
+
 //Sobrecarga del operador menor que
 template<class T>
 bool AVLNode<T>::operator < (AVLNode<T>& a)
@@ -192,70 +233,17 @@ bool AVLNode<T>::operator < (AVLNode<T>& a)
 	return data < a.data;
 }
 
-//Sobrecarga del operador menor que 
-//template<class T>
-//bool AVLNode<T>::operator < (AVLNode<T> & a) {
-//	
-//	if (apellido != a.apellido) {
-//		if (a.apellido > apellido) {
-//			return apellido < a.apellido;
-//		}
-//	}
-//
-//	else if (nombre != a.nombre) {
-//		if (a.nombre > nombre) {
-//			return nombre < a.nombre;
-//		}
-//	}
-//
-//	else if (edad != a.edad) {
-//		if (a.edad > edad) {
-//			return edad < a.edad;
-//		}
-//	}
-//
-//	else {
-//		return !(apellido < a.apellido);
-//	}
-//
-//}
-
 //Sobrecarga de operador mayor que 
 template<class T>
 bool AVLNode<T>::operator > (AVLNode & a) {
 
-	//if (apellido != a.apellido) {
-	//	if (a.apellido < apellido) {
-	//		return apellido > a.apellido;
-	//	}
-	//}
-	//
-	//else if (nombre != a.nombre) {
-	//	if (a.nombre < nombre) {
-	//		return nombre > a.nombre;
-	//	}
-	//}
-	//
-	//else if (edad != a.edad) {
-	//	if (a.edad < edad) {
-	//		return edad > a.edad;
-	//	}
-	//}
-	//
-	//else {
-	//	return !(apellido > a.apellido);
-	//}
-	
 	return data > a.data;
 }
 
-////Sobrecarga de operador de salida
-//template<class T>
-//std::ostream & AVLNode<T>::operator << (std::ostream & out) {
-//	out << nombre << " " << apellido << " " << edad << std::endl;
-//	return out;
-//}
 
+//Templates
+template class AVLNode<Persona>;	//Clase AVLNode con tipo de dato 'Persona'
+//template class Nodes<Persona>;		//Clase Nodes con tipo de dato 'Persona'
 
-
-template class AVLNode<Persona>;
+//template class AVLNode<int>;	//Clase AVLNode con tipo de dato 'int'
+//template class Nodes<int>;		//Clase Nodes con tipo de dato 'int'

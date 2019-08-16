@@ -2,26 +2,19 @@
 
 template <class T>
 class Nodes {
+
 public:
-	Nodes() {};
-	~Nodes() {};
 
-	void virtual preO() {};
-		  
-	void virtual inO() {};
-		  
-	void virtual postO() {};
-		  
-	void virtual add(Nodes<T>*) {};
+	Nodes() {};									//Constructor
+	~Nodes() {};								//Destructor
 
-	Nodes<T> virtual serch(Nodes<T>*, T) {};
+	//Funciones
+	void virtual preO() {};						//PreOrden Nodo
+	void virtual inO() {};						//InOrden Nodo
+	void virtual postO() {};					//PostOrden Nodo
+	void virtual erase(T) {};					//Eliminar nodo
 
-	//void virtual erase(T delData) {};
-
-
-
-	bool virtual operator < (Nodes<T> & a) {};
-
-	bool virtual operator > (Nodes<T> & a) {};
+	//Sobrecarga de operadores
+//	bool virtual operator < (Nodes<T> &) {};	//Operador menor que 
+//	bool virtual operator > (Nodes<T> &) {};	//Operador mayor que
 };
-

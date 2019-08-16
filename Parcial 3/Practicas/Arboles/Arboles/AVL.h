@@ -4,37 +4,25 @@
 
 template <class T>
 class AVL : public Arbol<T> {
+
 private:
-	unsigned int cont = 0;
+	unsigned int cont = 0;			//
 
 public:
-	AVLNode<T> * avlTREE;
+	AVLNode<T> * avlTREE;			//Raiz del arbol
 
-	AVL();
-	AVL(AVLNode<T> * arbol);
-	~AVL();
+	AVL();							//Constructor default
+	AVL(AVLNode<T> *);				//Constructor con parametros
+	~AVL();							//Destructor del arbol
 
-
-	void preO();			//PreOrden Arbol
-
-	void inO();				//InOrden Arbol
-
-	void postO();			//PostOrden Arbol
-
-	void add(AVLNode<T>*&);	//Añadir usuario nuevo como arbol
-
-	void bal(AVLNode<T>*);		//Balancear el arbol
-
-	//void Delete(string);	//Borrado desde el arbol
-
-	void rotIzq(AVLNode<T>*);
-
-	void rotDer(AVLNode<T>*);
-
-	void doblRotDer(AVLNode<T>*);
-
-	void doblRotIzq(AVLNode<T>*);
-
-
+	//Funciones
+	void preO();					//PreOrden Arbol
+	void inO();						//InOrden Arbol
+	void postO();					//PostOrden Arbol
+	void add(AVLNode<T>*&);			//Añadir nodo nuevo como arbol
+	void bal(AVLNode<T>*);			//Balancear el arbol
+	void rotIzq(AVLNode<T>*);		//Rotar a la izquierda
+	void rotDer(AVLNode<T>*);		//Rotar a la derecha
+	void doblRotDer(AVLNode<T>*);	//Doble rotacion a la derecha
+	void doblRotIzq(AVLNode<T>*);	//Doble rotacion a la izquierda
 };
-

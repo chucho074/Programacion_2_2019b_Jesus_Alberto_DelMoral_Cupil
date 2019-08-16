@@ -4,22 +4,16 @@ using std::string;
 
 template <class T>
 class Arbol {
+
 public:
 
-	Arbol() {};
+	Arbol() {};							//Constructor
+	~Arbol() {};						//Destructor
 
-	~Arbol() {};
-
-	void virtual preO() = 0;
-
-	void virtual inO() = 0;
-
-	void virtual postO() = 0;
-
-	void virtual add(Nodes<T>*&) = 0;
-
-	void virtual Delete(string) = 0;
-
+	//Funciones
+	void virtual preO() = 0;			//PreOrden Arbol
+	void virtual inO() = 0;				//InOrden Arbol
+	void virtual postO() = 0;			//PostOrden Arbol
+	//void virtual add(Nodes<T>*&) = 0;	//Añadir nodo como arbol
 	
 };
-
