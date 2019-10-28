@@ -118,6 +118,7 @@
     <ClCompile Include="Bin.cpp" />
     <ClCompile Include="AVL.cpp" />
     <ClCompile Include="BinNode.cpp" />
+    <ClCompile Include="Book.cpp" />
     <ClCompile Include="Persona.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="AVLNode.cpp" />
@@ -127,6 +128,7 @@
     <ClInclude Include="Bin.h" />
     <ClInclude Include="AVL.h" />
     <ClInclude Include="BinNode.h" />
+    <ClInclude Include="Book.h" />
     <ClInclude Include="Nodes.h" />
     <ClInclude Include="Persona.h" />
     <ClInclude Include="AVLNode.h" />

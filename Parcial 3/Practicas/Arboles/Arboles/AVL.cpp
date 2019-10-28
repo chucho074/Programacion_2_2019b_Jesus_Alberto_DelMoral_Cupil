@@ -1,5 +1,6 @@
 #include "AVL.h"
 #include "Persona.h"
+#include "Book.h"
 
 //Constructor default
 template <class T>
@@ -154,7 +155,7 @@ void AVL<T>::doblRotIzq(AVLNode<T> * a) {
 
 
 template class AVL<Persona>;	//Clase AVL con tipo de dato 'Persona'
-//template class Arbol<Persona>;	//Clase Arbol con tipo de dato 'Persona'
+template class AVL<Book>;	//Clase Arbol con tipo de dato 'Persona'
 
 //template class AVL<int>;		//Clase AVL con tipo de dato 'int'
 //template class Arbol<int>;		//Clase Arbol con tipo de dato 'int'

@@ -2,6 +2,7 @@
 #include <string>
 #include <iostream>
 #include "Persona.h"
+#include "Book.h"
 #include "Nodes.h"
 
 using std::string;

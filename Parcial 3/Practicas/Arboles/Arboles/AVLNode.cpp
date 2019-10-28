@@ -107,7 +107,7 @@ void AVLNode<T>::balAVLNode(AVLNode<T> * Node, unsInt cont) {
 		Nivel = cont;
 		if (izq != nullptr) {
 			cont++;
-			izq->balAVLNode(Node->izq, cont);
+			izq->balAVLNode(this->izq, cont);
 			balIzq = izq->pesoAct;
 			pesoAct = ((Nivel * balDer) + (Nivel * balIzq));
 			prev->balIzq = pesoAct;
@@ -124,7 +124,7 @@ void AVLNode<T>::balAVLNode(AVLNode<T> * Node, unsInt cont) {
 		}
 		if (der != nullptr) {
 			cont++;
-			der->balAVLNode(Node->der, cont);
+			der->balAVLNode(this->der, cont);
 			balDer = der->pesoAct;
 			pesoAct = ((Nivel * balIzq) + (Nivel * balDer));
 			prev->balDer = pesoAct;
@@ -182,9 +182,7 @@ void AVLNode<T>::balAVLNode(AVLNode<T> * Node, unsInt cont) {
 		}
 		
 	}
-	if (BF == 2) {
-		rotDer(this);
-	}
+	
 	
 }
 
@@ -332,7 +330,7 @@ bool AVLNode<T>::operator > (AVLNode & a) {
 
 //Templates
 template class AVLNode<Persona>;	//Clase AVLNode con tipo de dato 'Persona'
-//template class Nodes<Persona>;		//Clase Nodes con tipo de dato 'Persona'
+template class AVLNode<Book>;		//Clase Nodes con tipo de dato 'Persona'
 
 //template class AVLNode<int>;	//Clase AVLNode con tipo de dato 'int'
 //template class Nodes<int>;		//Clase Nodes con tipo de dato 'int'

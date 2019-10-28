@@ -1,5 +1,2 @@
-﻿  AVLNode.cpp
-i:\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\avlnode.cpp(211): warning C4715: 'AVLNode<Persona>::serch': no todas las rutas de acceso de control devuelven un valor
-i:\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\avlnode.cpp(275): warning C4715: 'AVLNode<Persona>::lastNodeDer': no todas las rutas de acceso de control devuelven un valor
-i:\repo\programacion_2_2019b_jesus_alberto_delmoral_cupil\parcial 3\practicas\arboles\arboles\avlnode.cpp(289): warning C4715: 'AVLNode<Persona>::lastNodeIzq': no todas las rutas de acceso de control devuelven un valor
-  Arboles.vcxproj -> I:\REPO\Programacion_2_2019b_Jesus_Alberto_DelMoral_Cupil\Parcial 3\Practicas\Arboles\Debug\Arboles.exe
+﻿  Source.cpp
+  Arboles.vcxproj -> D:\Escuela\Segundo cuatri\Progra\REPO\Programacion_2_2019b_Jesus_Alberto_DelMoral_Cupil\Parcial 3\Practicas\Arboles\Debug\Arboles.exe
